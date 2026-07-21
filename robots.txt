@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://soucris.github.io/cris-lopes-art/sitemap.xml
