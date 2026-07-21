@@ -22,3 +22,8 @@ lightbox.addEventListener("click", (e) => {
         lightbox.classList.remove("ativo");
     }
 });
+
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+

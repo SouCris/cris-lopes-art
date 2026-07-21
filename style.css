@@ -5499,3 +5499,19 @@ body{
 .cta-projeto__coracao img {
     width: 76px;
 }
+
+/* ========================================
+   PROTEÇÃO BÁSICA
+======================================== */
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+iimg {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
