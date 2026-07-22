@@ -62,15 +62,16 @@ header {
 }
 
 /* Estrutura principal em 3 colunas */
+
 .header-content {
-    width: 100%;
-    max-width: 1220px;
+    width: min(90%, 1280px);
     height: 78px;
     margin: 0 auto;
-    padding: 0 36px;
+    padding: 0;
 
     display: flex;
     align-items: center;
+    gap: 18px;
 }
 
 
@@ -104,16 +105,23 @@ header {
 ========================== */
 
 .nav-desktop {
-    margin-left: 10px;
+    flex: 1;
+    margin-left: 25px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .menu {
+    margin: 0;
+    padding: 0;
+
     display: flex;
     align-items: center;
-    gap: 22px;
+    justify-content: center;
+    gap: 34px;
+
     list-style: none;
 }
 
@@ -165,7 +173,7 @@ header {
    BOTÃO
 ========================== */
 .btn-menu {
-    margin-left: auto;
+    margin-left: 30px;
     flex-shrink: 0;
 
     display: inline-flex;
@@ -254,8 +262,7 @@ header {
 
 .hero-content {
     max-width: 640px;
-    margin-top: -55px;
-
+    margin-top: -80px;
     animation: heroTextEntrance 1s ease-out;
 }
 
@@ -5911,24 +5918,6 @@ img {
         padding-top: 110px;
     }
 }
-
-    .header-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .logo img {
-        max-width: 155px;
-    }
-
-    .btn-menu {
-        display: inline-flex;
-        padding: 12px 20px;
-        font-size: 13px;
-        white-space: nowrap;
-    }
 
 
 
