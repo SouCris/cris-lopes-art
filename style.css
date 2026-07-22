@@ -254,6 +254,7 @@ header {
 
 .hero-content {
     max-width: 640px;
+    margin-top: -55px;
 
     animation: heroTextEntrance 1s ease-out;
 }
@@ -5929,10 +5930,6 @@ img {
         white-space: nowrap;
     }
 
-    #hero {
-        padding-top: 110px;
-    }
-}
 
 
 /* ========================================
