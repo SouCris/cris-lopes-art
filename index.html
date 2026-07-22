@@ -24,7 +24,9 @@
 
     <link rel="icon" type="image/png" href="assets/favicon.png">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+<link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
@@ -102,8 +104,7 @@
                 <a href="https://wa.me/5564984188628?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20meu%20projeto."
                  class="btn-primary"
                 target="_blank">
-               ♡ Quero meu projeto
-</a>
+               <span class="btn-heart">♡</span> Quero meu projeto </a>
 
                 <a href="#portfolio" class="btn-secondary">
                     ◉ Ver portfólio
@@ -193,7 +194,10 @@
 <section class="publico" id="publico">
     <div class="publico__container">
 
-        <div class="publico__cabecalho">
+        <div
+    class="publico__cabecalho"
+    data-aos="fade-up"
+>
             <h2 class="publico__titulo">
                 Para quem criamos
             </h2>
@@ -206,7 +210,7 @@
 
         <div class="publico__grid">
 
-            <article class="publico-card">
+           <article class="publico-card" data-aos="fade-up" data-aos-delay="0">
              <div class="publico-card__imagem">
     <img src="assets/publico/professora.png"
          alt="Professora"
@@ -221,7 +225,7 @@
                 </p>
             </article>
 
-            <article class="publico-card">
+            <article class="publico-card" data-aos="fade-up" data-aos-delay="100">  
                 <div class="publico-card__imagem">
                 <img src="assets/publico/artesa.png"
                      alt="Artesã"
@@ -237,7 +241,7 @@
                 </p>
             </article>
 
-            <article class="publico-card">
+           <article class="publico-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="publico-card__imagem">
                  <img src="assets/publico/papelaria.png"
                     alt="Papelaria"
@@ -253,7 +257,7 @@
                 </p>
             </article>
 
-            <article class="publico-card">
+            <article class="publico-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="publico-card__imagem">
     <img
         src="assets/publico/produtos digitais.png"
@@ -269,7 +273,7 @@
                 </p>
             </article>
 
-            <article class="publico-card">
+            <article class="publico-card" data-aos="fade-up" data-aos-delay="400">
                 <div class="publico-card__imagem">
     <img
         src="assets/publico/pequenos negocios.png"
@@ -299,13 +303,13 @@
 
     <div class="servicos__container">
 
-        <h2 class="servicos__titulo">
+        <h2 class="servicos__titulo" data-aos="fade-up">
             O que podemos criar para você
         </h2>
 
         <div class="servicos__grid">
 
-            <article class="servico-card">
+            <article class="servico-card" data-aos="zoom-in" data-aos-delay="0">
 
                 <div class="servico-card__imagem">
                     <img
@@ -329,7 +333,7 @@
 
             </article>
 
-            <article class="servico-card">
+           <article class="servico-card" data-aos="zoom-in" data-aos-delay="100">
 
                 <div class="servico-card__imagem">
                     <img
@@ -353,7 +357,7 @@
 
             </article>
 
-            <article class="servico-card">
+            <article class="servico-card" data-aos="zoom-in" data-aos-delay="200">
 
                 <div class="servico-card__imagem">
                     <img
@@ -378,7 +382,7 @@
 
             </article>
 
-            <article class="servico-card">
+            <article class="servico-card"data-aos="zoom-in"data-aos-delay="300">
 
                 <div class="servico-card__imagem">
                     <img
@@ -639,174 +643,227 @@
 <section id="portfolio" class="portfolio">
 
     <!-- CABEÇALHO -->
-    <div class="portfolio__cabecalho">
+    <div
+    class="portfolio__cabecalho"
+    data-aos="fade-up"
+>
 
-        <h2 class="portfolio__titulo">
-            Portfólio
-        </h2>
+    <h2 class="portfolio__titulo">
+        Portfólio
+    </h2>
 
-     
-    </div>
+    <p class="portfolio__descricao">
+        Projetos criados para transformar ideias
+        em experiências digitais.
+    </p>
+
+</div>
 
     <!-- PROJETOS -->
     <div class="portfolio__grid">
 
         <!-- PROJETO 1 -->
-        <article class="projeto-card">
+        <article
+            class="projeto-card" data-aos="zoom-in"data-aos-delay="0"
+        >
 
-            <a href="#" class="projeto-card__link">
+            <div class="projeto-card__imagem">
+    <a
+        href="assets/portfolio/loja-professora.png"
+        class="portfolio-popup"
+    >
+        <img
+            src="assets/portfolio/loja-professora.png"
+            alt="Projeto conceitual Loja da Professora"
+        >
 
-                <div class="projeto-card__imagem">
-                    <a href="assets/portfolio/loja-professora.png" class="portfolio-popup">
-                    <img src="assets/portfolio/loja-professora.png" alt="Loja da Professora"></a>
-                    
-                </div>
+        <span class="portfolio-overlay">
+            👁 Ver projeto
+        </span>
+    </a>
+</div>
 
-                <div class="projeto-card__conteudo">
+            <div class="projeto-card__conteudo">
 
-                    <h3 class="projeto-card__titulo">
-                        Loja da Professora
-                       
-                    </h3>
+                <h3 class="projeto-card__titulo">
+                    Loja da Professora
+                </h3>
 
-                    <p class="projeto-card__categoria">
-                        Loja Virtual
-                    </p>
+                <p class="projeto-card__categoria">
+                    Loja Virtual
+                </p>
 
-                    <small class="projeto-card__status">
-                        Projeto conceitual
-                    </small>
+                <small class="projeto-card__status">
+                ✓ Projeto conceitual
+               </small>
 
-                </div>
-
-            </a>
+            </div>
 
         </article>
 
         <!-- PROJETO 2 -->
-        <article class="projeto-card">
+        <article
+            class="projeto-card"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+        >
 
-            <a href="#" class="projeto-card__link">
+           <div class="projeto-card__imagem">
+    <a
+        href="assets/portfolio/atelie-encanto.png"
+        class="portfolio-popup"
+    >
+        <img
+            src="assets/portfolio/atelie-encanto.png"
+            alt="Projeto conceitual Ateliê Encanto"
+        >
 
-                <div class="projeto-card__imagem">
-                    <a href="assets/portfolio/atelie-encanto.png" class="portfolio-popup">
-                    <img src="assets/portfolio/atelie-encanto.png" alt="atelie-encanto"> </a>
-                    
-                </div>
+        <span class="portfolio-overlay">
+            👁 Ver projeto
+        </span>
 
-                <div class="projeto-card__conteudo">
+    </a>
+</div>
 
-                    <h3 class="projeto-card__titulo">
-                        Ateliê Encanto
-                        
-                    </h3>
+            <div class="projeto-card__conteudo">
 
-                    <p class="projeto-card__categoria">
-                        Loja Virtual
-                    </p>
+                <h3 class="projeto-card__titulo">
+                    Ateliê Encanto
+                </h3>
 
-                    <small class="projeto-card__status">
-                        Projeto conceitual
-                    </small>
+                <p class="projeto-card__categoria">
+                    Loja Virtual
+                </p>
 
-                </div>
+                <small class="projeto-card__status">
+    ✓ Projeto conceitual
+</small>
 
-            </a>
+            </div>
 
         </article>
 
         <!-- PROJETO 3 -->
-        <article class="projeto-card">
+        <article
+            class="projeto-card"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+        >
 
-            <a href="#" class="projeto-card__link">
+            <div class="projeto-card__imagem">
+    <a
+        href="assets/portfolio/papelaria-criativa.png"
+        class="portfolio-popup"
+    >
+        <img
+            src="assets/portfolio/papelaria-criativa.png"
+            alt="Projeto conceitual Papelaria Criativa"
+        >
 
-                <div class="projeto-card__imagem">
-                    <a href="assets/portfolio/papelaria-criativa.png" class="portfolio-popup">
-                    <img src="assets/portfolio/papelaria-criativa.png" alt="papelaria-criativa"> </a>
-                    
-                </div>
+        <span class="portfolio-overlay">
+            👁 Ver projeto
+        </span>
 
-                <div class="projeto-card__conteudo">
+    </a>
+</div>
 
-                    <h3 class="projeto-card__titulo">
-                        Papelaria Criativa
-                       
-                    </h3>
+            <div class="projeto-card__conteudo">
 
-                    <p class="projeto-card__categoria">
-                        Loja Virtual
-                    </p>
+                <h3 class="projeto-card__titulo">
+                    Papelaria Criativa
+                </h3>
 
-                    <small class="projeto-card__status">
-                        Projeto conceitual
-                    </small>
+                <p class="projeto-card__categoria">
+                    Loja Virtual
+                </p>
 
-                </div>
+                <small class="projeto-card__status">
+    ✓ Projeto conceitual
+</small>
 
-            </a>
+            </div>
 
         </article>
 
         <!-- PROJETO 4 -->
-        <article class="projeto-card">
+        <article
+            class="projeto-card"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+        >
 
-            <a href="#" class="projeto-card__link">
+            <div class="projeto-card__imagem">
+    <a
+        href="assets/portfolio/doce-papel.png"
+        class="portfolio-popup"
+    >
+        <img
+            src="assets/portfolio/doce-papel.png"
+            alt="Projeto conceitual Doce Papel"
+        >
 
-                <div class="projeto-card__imagem">
-                    <a href="assets/portfolio/doce-papel.png" class="portfolio-popup">
-                    <img src="assets/portfolio/doce-papel.png" alt="doce-papel"> </a>
-                    
-                </div>
+        <span class="portfolio-overlay">
+            👁 Ver projeto
+        </span>
 
-                <div class="projeto-card__conteudo">
+    </a>
+</div>
 
-                    <h3 class="projeto-card__titulo">
-                        Doce Papel
-                       
-                    </h3>
+            <div class="projeto-card__conteudo">
 
-                    <p class="projeto-card__categoria">
-                        Loja Virtual
-                    </p>
+                <h3 class="projeto-card__titulo">
+                    Doce Papel
+                </h3>
 
-                    <small class="projeto-card__status">
-                        Projeto conceitual
-                    </small>
+                <p class="projeto-card__categoria">
+                    Loja Virtual
+                </p>
 
-                </div>
+                <small class="projeto-card__status">
+    ✓ Projeto conceitual
+</small>
 
-            </a>
+            </div>
 
         </article>
 
         <!-- PROJETO 5 -->
-        <article class="projeto-card">
+        <article
+            class="projeto-card projeto-card--real"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+        >
 
-            <a href="#" class="projeto-card__link">
+            <div class="projeto-card__imagem">
+    <a
+        href="assets/portfolio/total-limp.png"
+        class="portfolio-popup"
+    >
+        <img
+            src="assets/portfolio/total-limp.png"
+            alt="Site institucional da Total Limp"
+        >
 
-                <div class="projeto-card__imagem">
-                    <a href="assets/portfolio/total-limp.png" class="portfolio-popup">
-                    <img src="assets/portfolio/total-limp.png" alt="total-limp"> </a>
-                </div>
+        <span class="portfolio-overlay">
+            👁 Ver projeto
+        </span>
 
-                <div class="projeto-card__conteudo">
+    </a>
+</div>
 
-                    <h3 class="projeto-card__titulo">
-                        Total Limp
-                    
-                    </h3>
+            <div class="projeto-card__conteudo">
 
-                    <p class="projeto-card__categoria">
-                        Site Institucional
-                    </p>
+                <h3 class="projeto-card__titulo">
+                    Total Limp
+                </h3>
 
-                    <small class="projeto-card__status projeto-card__status--entregue">
-                        Projeto entregue
-                    </small>
+                <p class="projeto-card__categoria">
+                    Site Institucional
+                </p>
 
-                </div>
+                <small class="projeto-card__status projeto-card__status--entregue"> ✓ Projeto real entregue </small>
 
-            </a>
+            </div>
 
         </article>
 
@@ -814,6 +871,25 @@
 
 </section>
 
+<section class="portfolio-cta" data-aos="fade-up">
+
+    <div class="portfolio-cta__divider">
+        <span>✦</span>
+    </div>
+
+    <h2 class="portfolio-cta__titulo">
+        Gostou dos projetos?
+    </h2>
+
+    <p class="portfolio-cta__texto">
+        Seu projeto pode ser o próximo.
+    </p>
+
+    <div class="portfolio-cta__divider">
+        <span>✦</span>
+    </div>
+
+</section>
 
 <!-- =========================================
      SEÇÃO DE PREÇOS
@@ -1441,7 +1517,16 @@ Acompanho cada etapa do projeto com cuidado, buscando criar uma presença digita
    <span class="whatsapp-text">Solicite um orçamento</span>
 </a>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
+
+<script>
+AOS.init({
+    duration: 800,
+    easing: "ease-out",
+    once: true
+});
+</script>
 
 </body>
 </html>

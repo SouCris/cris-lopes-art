@@ -88,3 +88,75 @@ whatsappButton.addEventListener("click", () => {
 });
 }
 
+
+
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+revealElements.forEach((element) => {
+    revealObserver.observe(element);
+});
+
+// ========================================
+// CONTADOR ANIMADO DO PREÇO
+// ========================================
+
+const precoValor = document.querySelector(".plano__valor");
+
+if (precoValor) {
+    const valorFinal = 699;
+    const duracao = 1500;
+    let contadorExecutado = false;
+
+    const animarPreco = () => {
+        const inicio = performance.now();
+
+        const atualizarValor = (tempoAtual) => {
+            const tempoDecorrido = tempoAtual - inicio;
+            const progresso = Math.min(tempoDecorrido / duracao, 1);
+
+            const valorAtual = Math.floor(progresso * valorFinal);
+
+            precoValor.textContent = `${valorAtual},00`;
+
+            if (progresso < 1) {
+                requestAnimationFrame(atualizarValor);
+            } else {
+                precoValor.textContent = "699,00";
+            }
+        };
+
+        requestAnimationFrame(atualizarValor);
+    };
+
+    const precoObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && !contadorExecutado) {
+                    contadorExecutado = true;
+                    animarPreco();
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.5
+        }
+    );
+
+    precoObserver.observe(precoValor);
+}
