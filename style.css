@@ -472,7 +472,7 @@ header {
     height: auto;
 
     object-fit: contain;
-r
+
     transform: translateY(28px);
 
     filter: drop-shadow(
@@ -1752,15 +1752,6 @@ r
 
     transition: transform 0.3s ease;
 }
-
-box-shadow:
-    0 10px 26px rgba(93, 60, 100, 0.08),
-    inset 0 0 18px rgba(211, 145, 176, 0.12);
-
-transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
 
 
 .passo__icone img {
@@ -4012,39 +4003,52 @@ animation: selo-respira 3s ease-in-out infinite;
     line-height: 1.55;
 }
 
-.rodape-final__redes {
-    display: flex;
-    gap: 13px;
+.rodape-final__redes{
+    display:flex;
+    gap:16px;
 }
 
-.rodape-final__rede {
-    width: 42px;
-    height: 42px;
+.rodape-final__rede{
+    width:48px;
+    height:48px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    border: 1px solid rgba(236, 77, 178, 0.65);
-    border-radius: 50%;
+    border-radius:50%;
 
-    color: #f16ab5;
+    border:1px solid rgba(255,255,255,.10);
 
-    font-family: "Poppins", sans-serif;
-    font-size: 19px;
-    text-decoration: none;
+    background:rgba(255,255,255,.06);
 
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        color 0.25s ease;
+    color:#D391B0;
+
+    text-decoration:none;
+
+    backdrop-filter:blur(8px);
+
+    transition:.30s ease;
 }
 
-.rodape-final__rede:hover {
-    transform: translateY(-3px);
+.rodape-final__rede svg{
+    width:22px;
+    height:22px;
 
-    color: #ffffff;
-    background: rgba(236, 77, 178, 0.17);
+    stroke:currentColor;
+    fill:none;
+    stroke-width:2;
+}
+
+.rodape-final__rede:hover{
+    transform:translateY(-5px);
+
+    background:#D391B0;
+
+    color:#fff;
+
+    box-shadow:
+        0 10px 25px rgba(211,145,176,.35);
 }
 
 /* COLUNAS */
@@ -5878,7 +5882,6 @@ body {
 
 img {
     -webkit-user-drag: none;
-    user-drag: none;
 }
 
 /* fecha o @media de 480px */
