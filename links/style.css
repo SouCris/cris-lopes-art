@@ -1,0 +1,1007 @@
+/* ==========================================================
+   CRIS LOPES ART — PÁGINA /LINKS
+   STYLE.CSS COMPLETO
+========================================================== */
+
+
+/* ==========================================================
+   1. VARIÁVEIS
+========================================================== */
+
+:root {
+  --background: #0c0420;
+  --background-deep: #070211;
+
+  --purple-dark: #160720;
+  --purple: #5d3c64;
+  --purple-medium: #7b466a;
+
+  --pink-dark: #ba6e8f;
+  --pink: #d391b0;
+  --pink-light: #f2b8d3;
+
+  --white: #fffafd;
+  --white-soft: rgba(255, 250, 253, 0.72);
+  --white-muted: rgba(255, 250, 253, 0.52);
+
+  --card-border: rgba(211, 145, 176, 0.55);
+  --card-border-hover: rgba(242, 184, 211, 0.95);
+
+  --font-title: "Playfair Display", Georgia, serif;
+  --font-text: "DM Sans", Arial, sans-serif;
+
+  --page-width: 520px;
+  --page-padding: 18px;
+
+  --transition: 260ms ease;
+}
+
+
+/* ==========================================================
+   2. RESET
+========================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  color: var(--white);
+
+  background:
+    radial-gradient(
+      circle at 50% -10%,
+      rgba(159, 100, 150, 0.18),
+      transparent 34%
+    ),
+    linear-gradient(
+      180deg,
+      #090314 0%,
+      #050109 100%
+    );
+
+  font-family: var(--font-text);
+  font-size: 16px;
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ==========================================================
+   3. ESTRUTURA PRINCIPAL
+========================================================== */
+
+.page {
+  position: relative;
+
+  width: 100%;
+  max-width: var(--page-width);
+  min-height: 100vh;
+
+  margin: 0 auto;
+  padding-bottom: 32px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 12% 36%,
+      rgba(159, 100, 150, 0.12),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 94% 68%,
+      rgba(186, 110, 143, 0.1),
+      transparent 22%
+    ),
+    linear-gradient(
+      180deg,
+      #0e041b 0%,
+      #0b0317 55%,
+      #070210 100%
+    );
+
+  box-shadow:
+    0 0 70px rgba(0, 0, 0, 0.7);
+}
+
+.page::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 0;
+
+  pointer-events: none;
+
+  opacity: 0.52;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.012) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.012) 1px,
+      transparent 1px
+    );
+
+  background-size: 42px 42px;
+}
+
+.page::after {
+  content: "";
+
+  position: absolute;
+
+  top: 38%;
+  left: -120px;
+
+  width: 250px;
+  height: 250px;
+
+  z-index: 0;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(211, 145, 176, 0.13),
+      transparent 70%
+    );
+
+  filter: blur(8px);
+}
+
+
+/* ==========================================================
+   4. BANNER
+========================================================== */
+
+.hero {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+  bottom: -1px;
+  left: 0;
+
+  height: 42px;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(14, 4, 27, 0.55) 54%,
+      #0e041b 100%
+    );
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+
+  border: 0;
+}
+
+
+/* ==========================================================
+   5. SEÇÃO DOS LINKS
+========================================================== */
+
+.links-section {
+  position: relative;
+  z-index: 3;
+
+  padding:
+    6px
+    var(--page-padding)
+    0;
+}
+
+.links-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: -70px;
+  left: 50%;
+
+  width: 85%;
+  height: 160px;
+
+  z-index: -1;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(93, 60, 100, 0.22),
+      transparent 70%
+    );
+
+  filter: blur(16px);
+}
+
+.links {
+  display: grid;
+  gap: 15px;
+
+  width: 100%;
+}
+
+
+/* ==========================================================
+   6. CARDS
+========================================================== */
+
+.link-card {
+  position: relative;
+
+  min-height: 88px;
+
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 15px;
+
+  padding: 14px 17px 14px 14px;
+
+  overflow: hidden;
+  isolation: isolate;
+
+  color: var(--white);
+
+  text-decoration: none;
+
+  border:
+    1px solid
+    var(--card-border);
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.065),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(43, 13, 55, 0.97),
+      rgba(17, 5, 29, 0.98)
+    );
+
+  box-shadow:
+    0 15px 34px rgba(0, 0, 0, 0.36),
+    0 0 0 1px rgba(255, 255, 255, 0.018),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -16px 30px rgba(0, 0, 0, 0.11);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+
+  animation:
+    cardEntrance
+    640ms
+    both;
+}
+
+.link-card:nth-child(1) {
+  animation-delay: 80ms;
+}
+
+.link-card:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.link-card:nth-child(3) {
+  animation-delay: 220ms;
+}
+
+.link-card:nth-child(4) {
+  animation-delay: 290ms;
+}
+
+.link-card:nth-child(5) {
+  animation-delay: 360ms;
+}
+
+
+/* Luz suave dentro do card */
+
+.link-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: -70px;
+  left: -70px;
+
+  width: 170px;
+  height: 170px;
+
+  z-index: -2;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  opacity: 0.55;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(211, 145, 176, 0.24),
+      transparent 68%
+    );
+
+  transition:
+    opacity var(--transition),
+    transform var(--transition);
+}
+
+
+/* Efeito de brilho passando */
+
+.link-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: -70%;
+  left: -55%;
+
+  width: 30%;
+  height: 240%;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  opacity: 0;
+
+  transform: rotate(18deg);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.14),
+      transparent
+    );
+
+  transition:
+    left 700ms ease,
+    opacity 180ms ease;
+}
+
+
+/* ==========================================================
+   7. DECORAÇÃO INTERNA DO CARD
+========================================================== */
+
+.link-card__decoration {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 110px;
+  height: 100%;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  opacity: 0.48;
+
+  background:
+    radial-gradient(
+      circle at 100% 50%,
+      rgba(211, 145, 176, 0.13),
+      transparent 68%
+    );
+}
+
+
+/* ==========================================================
+   8. ÍCONES
+========================================================== */
+
+.link-card__icon {
+  position: relative;
+
+  width: 58px;
+  height: 58px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  color: var(--pink-light);
+
+  border:
+    1px solid
+    rgba(242, 184, 211, 0.68);
+
+  border-radius: 18px;
+
+  background:
+    radial-gradient(
+      circle at 28% 22%,
+      rgba(255, 255, 255, 0.2),
+      transparent 28%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(123, 70, 106, 0.84),
+      rgba(45, 13, 57, 0.98)
+    );
+
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.28),
+    0 0 21px rgba(211, 145, 176, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.13),
+    inset 0 -12px 20px rgba(5, 1, 10, 0.2);
+
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    box-shadow var(--transition);
+}
+
+.link-card__icon::before {
+  content: "";
+
+  position: absolute;
+  inset: 5px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.05);
+
+  border-radius: 13px;
+
+  pointer-events: none;
+}
+
+.link-card__icon svg {
+  width: 27px;
+  height: 27px;
+
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  filter:
+    drop-shadow(
+      0 0 7px rgba(242, 184, 211, 0.22)
+    );
+}
+
+.link-card__icon .icon-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+
+/* ==========================================================
+   9. TEXTOS DOS CARDS
+========================================================== */
+
+.link-card__content {
+  min-width: 0;
+}
+
+.link-card__content strong {
+  display: block;
+
+  overflow: hidden;
+
+  color: var(--white);
+
+  font-family: var(--font-title);
+  font-size: 1.08rem;
+  font-weight: 600;
+
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.link-card__content small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--white-muted);
+
+  font-family: var(--font-text);
+  font-size: 0.72rem;
+  font-weight: 500;
+
+  line-height: 1.3;
+  letter-spacing: 0.004em;
+}
+
+
+/* ==========================================================
+   10. SETA
+========================================================== */
+
+.link-card__arrow {
+  width: 28px;
+  height: 28px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--pink);
+
+  transition:
+    transform var(--transition),
+    color var(--transition);
+}
+
+.link-card__arrow svg {
+  width: 27px;
+  height: 27px;
+
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  filter:
+    drop-shadow(
+      0 0 7px rgba(211, 145, 176, 0.36)
+    );
+}
+
+
+/* ==========================================================
+   11. HOVER E FOCO
+========================================================== */
+
+@media (hover: hover) {
+  .link-card:hover {
+    transform: translateY(-4px);
+
+    border-color:
+      var(--card-border-hover);
+
+    background:
+      linear-gradient(
+        115deg,
+        rgba(255, 255, 255, 0.09),
+        transparent 38%
+      ),
+      linear-gradient(
+        145deg,
+        rgba(52, 16, 67, 0.98),
+        rgba(20, 5, 34, 0.99)
+      );
+
+    box-shadow:
+      0 22px 46px rgba(0, 0, 0, 0.46),
+      0 0 30px rgba(211, 145, 176, 0.14),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .link-card:hover::before {
+    opacity: 0.85;
+
+    transform:
+      scale(1.15)
+      translate(8px, 2px);
+  }
+
+  .link-card:hover::after {
+    left: 125%;
+    opacity: 1;
+  }
+
+  .link-card:hover .link-card__icon {
+    color: #ffd4e8;
+
+    transform:
+      translateY(-2px)
+      rotate(-2deg)
+      scale(1.04);
+
+    border-color:
+      rgba(255, 217, 235, 0.92);
+
+    box-shadow:
+      0 14px 26px rgba(0, 0, 0, 0.34),
+      0 0 28px rgba(211, 145, 176, 0.24),
+      inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  }
+
+  .link-card:hover .link-card__arrow {
+    color: var(--pink-light);
+
+    transform: translateX(5px);
+  }
+}
+
+.link-card:focus-visible {
+  outline:
+    2px solid
+    var(--pink-light);
+
+  outline-offset: 4px;
+
+  border-color:
+    var(--card-border-hover);
+}
+
+.link-card:active,
+.link-card.is-pressed {
+  transform: scale(0.975);
+}
+
+
+/* ==========================================================
+   12. RODAPÉ
+========================================================== */
+
+.footer {
+  position: relative;
+  z-index: 2;
+
+  padding:
+    37px
+    var(--page-padding)
+    10px;
+
+  text-align: center;
+}
+
+.footer__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  margin-bottom: 15px;
+}
+
+.footer__ornament::before,
+.footer__ornament::after {
+  content: "";
+
+  width: 44px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(211, 145, 176, 0.62)
+    );
+}
+
+.footer__ornament::after {
+  transform: scaleX(-1);
+}
+
+.footer__ornament span {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: var(--pink);
+
+  box-shadow:
+    0 0 8px rgba(211, 145, 176, 0.55);
+}
+
+.footer__ornament span:nth-child(2) {
+  width: 6px;
+  height: 6px;
+}
+
+.footer p {
+  margin: 0;
+
+  color: var(--white-soft);
+
+  font-family: var(--font-text);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.footer p span {
+  color: var(--pink);
+
+  margin-left: 2px;
+}
+
+.footer small {
+  display: block;
+
+  margin-top: 6px;
+
+  color: rgba(255, 250, 253, 0.36);
+
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+
+/* ==========================================================
+   13. ANIMAÇÃO DE ENTRADA
+========================================================== */
+
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(18px)
+      scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* Mantém compatibilidade com o script existente */
+
+.reveal {
+  visibility: visible;
+}
+
+.reveal.is-visible {
+  visibility: visible;
+}
+
+
+/* ==========================================================
+   14. TABLET E TELAS MAIORES
+========================================================== */
+
+@media (min-width: 521px) {
+  body {
+    padding: 24px 0;
+  }
+
+  .page {
+    min-height: calc(100vh - 48px);
+
+    border:
+      1px solid
+      rgba(211, 145, 176, 0.16);
+
+    border-radius: 28px;
+
+    box-shadow:
+      0 30px 90px rgba(0, 0, 0, 0.68),
+      0 0 0 1px rgba(255, 255, 255, 0.018);
+  }
+
+  .hero {
+    border-radius: 28px 28px 0 0;
+  }
+
+  .links-section {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .links {
+    gap: 17px;
+  }
+
+  .link-card {
+    min-height: 94px;
+
+    grid-template-columns: 62px minmax(0, 1fr) 32px;
+    gap: 17px;
+
+    padding:
+      15px
+      20px
+      15px
+      15px;
+
+    border-radius: 26px;
+  }
+
+  .link-card__icon {
+    width: 62px;
+    height: 62px;
+
+    border-radius: 20px;
+  }
+
+  .link-card__icon::before {
+    border-radius: 15px;
+  }
+
+  .link-card__icon svg {
+    width: 29px;
+    height: 29px;
+  }
+
+  .link-card__content strong {
+    font-size: 1.18rem;
+  }
+
+  .link-card__content small {
+    font-size: 0.76rem;
+  }
+
+  .link-card__arrow svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/* ==========================================================
+   15. CELULARES PEQUENOS
+========================================================== */
+
+@media (max-width: 390px) {
+  :root {
+    --page-padding: 12px;
+  }
+
+  .links {
+    gap: 12px;
+  }
+
+  .link-card {
+    min-height: 80px;
+
+    grid-template-columns: 52px minmax(0, 1fr) 24px;
+    gap: 12px;
+
+    padding:
+      12px
+      13px
+      12px
+      12px;
+
+    border-radius: 21px;
+  }
+
+  .link-card__icon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 16px;
+  }
+
+  .link-card__icon::before {
+    inset: 4px;
+
+    border-radius: 12px;
+  }
+
+  .link-card__icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .link-card__content strong {
+    font-size: 0.98rem;
+  }
+
+  .link-card__content small {
+    margin-top: 4px;
+
+    font-size: 0.66rem;
+  }
+
+  .link-card__arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .link-card__arrow svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer {
+    padding-top: 31px;
+  }
+}
+
+
+/* ==========================================================
+   16. ACESSIBILIDADE
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}
