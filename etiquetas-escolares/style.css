@@ -352,11 +352,10 @@ a {
   }
 
   .hero__button {
-    left: 5.7%;
-    top: 65.2%;
-
-    width: 31%;
-    min-height: 14.5%;
+    left: 8.8%;
+    top: 76%;
+    width: 28%;
+    min-height: 0;
 
     gap: 8px;
   }
@@ -364,6 +363,8 @@ a {
   .models-preview {
     padding: 58px 0;
   }
+
+  
 
 }
 
