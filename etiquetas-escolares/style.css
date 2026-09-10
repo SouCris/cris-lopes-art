@@ -367,6 +367,11 @@ a {
 
 }
 
+/* Celular em modo paisagem */
+@media (max-height: 500px) and (orientation: landscape) {
+
+}
+
 
 /* =========================================================
    HERO E CABEÇALHO — CELULAR
