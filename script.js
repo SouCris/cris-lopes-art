@@ -118,7 +118,7 @@ revealElements.forEach((element) => {
 const precoValor = document.querySelector(".plano__valor");
 
 if (precoValor) {
-    const valorFinal = 699;
+    const valorFinal = 799;
     const duracao = 1500;
     let contadorExecutado = false;
 
@@ -136,7 +136,7 @@ if (precoValor) {
             if (progresso < 1) {
                 requestAnimationFrame(atualizarValor);
             } else {
-                precoValor.textContent = "699,00";
+                precoValor.textContent = "799,00";
             }
         };
 
