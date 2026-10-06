@@ -59,18 +59,30 @@
                 alt="Cris Lopes Art - IA, Web e Software"
             >
         </a>
+<button
+    class="menu-toggle"
+    type="button"
+    aria-label="Abrir menu"
+    aria-controls="menu-principal"
+    aria-expanded="false"
+>
+    ☰
+</button>
 
-        <nav class="nav-desktop" aria-label="Navegação principal">
+        <nav id="menu-principal" class="nav-desktop" aria-label="Navegação principal">
             <ul class="menu">
-                <li><a href="#hero" class="active">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#como-funciona">Como funciona</a></li>
-                <li><a href="#precos">Preços</a></li>
-                <li><a href="#faq">Dúvidas</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="https://crislopesart.com.br/etiquetas-escolares"target="_blank"rel="noopener noreferrer">Etiquetas Escolares</a></li>
+    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#publico">Público</a></li>
+    <li><a href="#como-comecar">Como começar</a></li>
+    <li><a href="#servicos">Loja</a></li>
+    <li><a href="#como-funciona">Etapas</a></li>
+    <li><a href="#portfolio">Portfólio</a></li>
+    <li><a href="#precos">Preços</a></li>
+    <li><a href="#faq">Faq</a></li>
+    <li><a href="#sobre">Sobre</a></li>
             </ul>
+
+            
         </nav>
 
         <a
@@ -93,25 +105,26 @@
         <div class="hero-content">
 
             <span class="hero-tag">
-                IA • WEB • SOFTWARE
+            SUA LOJA • SUAS VENDAS
             </span>
 
           <h1>
-    Sua <span>loja virtual</span> pronta para vender.
+    Sua loja de <span>produtos digitais</span> pronta para vender.
 </h1>
 
 <p>
-    Desenvolvemos lojas virtuais para produtos digitais,
-    sites e soluções digitais para empresas que 
-    desejam crescer, fortalecer sua marca
-    e vender com mais profissionalismo.
+    Uma loja com a identidade da sua marca, 
+    onde suas clientes podem comprar e baixar seus produtos.
+    Eu cuido da criação e configuração e te oriento em cada etapa
+    
 </p>
 
             <div class="hero-buttons">
                 <a href="https://wa.me/5564984188628?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20meu%20projeto."
                  class="btn-primary"
                 target="_blank">
-               <span class="btn-heart">♡</span> Quero meu projeto </a>
+               <span class="btn-heart" aria-hidden="true">♡</span>
+               <span>Quero meu projeto</span></a>
 
                 <a href="#portfolio" class="btn-secondary">
                     ◉ Ver portfólio
@@ -169,19 +182,9 @@
 </div> <!-- ADICIONE: fecha hero-container -->
 
 <div class="hero-wave">
-    <div class="hero-wave-content">
-        <span class="wave-spark">✦</span>
+    
 
-        <h2>
-            Tecnologia pode ser leve.
-            <span>Criativa. Encantadora.</span>
-        </h2>
-
-        <span class="wave-heart">♡</span>
-        <span class="wave-spark">✦</span>
-    </div>
-</div>
-</section>
+        </section>
 
 
 
@@ -272,11 +275,11 @@
     >
 </div>
                 <h3 class="publico-card__titulo">
-                    Produtos digitais
+                    Criadores digitais
                 </h3>
 
                 <p class="publico-card__texto">
-                    Venda PDFs, apostilas, moldes, planners e muito mais com entrega automática.
+                    Para quem vende e-books, planners, materiais educativos e outros arquivos digitais.
                 </p>
             </article>
 
@@ -302,8 +305,111 @@
     </div>
 </section>
 
-    <!-- ========================================
-     O QUE PODEMOS CRIAR PARA VOCÊ
+    
+
+<!-- ========================================
+     COMO COMEÇAR SUA LOJA
+======================================== -->
+
+<section id="como-comecar" class="comecar-loja">
+
+    <div class="comecar-loja__visual">
+        <img
+            src="assets/diferencial/loja-celular.png"
+            alt="Prévia da loja virtual Lume Educação em um celular"
+            class="comecar-loja__imagem"
+            loading="lazy"
+        >
+    </div>
+
+    <div class="comecar-loja__conteudo">
+
+        <h2 class="comecar-loja__titulo">
+            Como começar sua loja
+        </h2>
+
+        <p class="comecar-loja__introducao">
+            Veja o que você precisa providenciar.
+            Eu te oriento em cada etapa para preparar tudo.
+        </p>
+
+        <div class="comecar-loja__cards">
+
+            <article class="comecar-loja__card">
+                <span class="comecar-loja__numero" aria-hidden="true">
+                    01
+                </span>
+
+                <h3 class="comecar-loja__nome">
+                    Domínio próprio
+                </h3>
+
+                <p class="comecar-loja__texto">
+                    O endereço da sua loja na internet,
+                    como sualoja.com.br.
+                </p>
+            </article>
+
+            <article class="comecar-loja__card">
+                <span class="comecar-loja__numero" aria-hidden="true">
+                    02
+                </span>
+
+                <h3 class="comecar-loja__nome">
+                    Hospedagem WordPress
+                </h3>
+
+                <p class="comecar-loja__texto">
+                    O serviço que mantém sua loja funcionando
+                    e disponível na internet.
+                </p>
+            </article>
+
+            <article class="comecar-loja__card">
+                <span class="comecar-loja__numero" aria-hidden="true">
+                    03
+                </span>
+
+                <h3 class="comecar-loja__nome">
+                    Conta para receber pagamentos
+                </h3>
+
+                <p class="comecar-loja__texto">
+                    Uma conta no Mercado Pago ou em outro
+                    meio de pagamento que definirmos.
+                </p>
+            </article>
+
+            <article class="comecar-loja__card">
+                <span class="comecar-loja__numero" aria-hidden="true">
+                    04
+                </span>
+
+                <h3 class="comecar-loja__nome">
+                    Identidade visual
+                </h3>
+
+                <p class="comecar-loja__texto">
+                    Logo, cores e referências
+                    que representam sua marca.
+                </p>
+            </article>
+
+        </div>
+
+        <p class="comecar-loja__observacao">
+            <strong>Ainda não tem identidade visual?</strong>
+            Podemos definir a direção visual da loja
+            conforme o serviço contratado.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     O que sua loja terá?
 ======================================== -->
 
 <section id="servicos" class="servicos">
@@ -311,7 +417,7 @@
     <div class="servicos__container">
 
         <h2 class="servicos__titulo" data-aos="fade-up">
-            O que podemos criar para você
+            O que sua loja terá?
         </h2>
 
         <div class="servicos__grid">
@@ -326,12 +432,19 @@
                 </div>
 
                 <h3 class="servico-card__titulo">
-                    Site Institucional
+                    Sua marca na loja
                 </h3>
 
                 <p class="servico-card__texto">
-                    Páginas profissionais para fortalecer sua marca e transmitir confiança.
-                </p>
+    <span class="servico-card__texto-completo">
+        Página inicial personalizada, banner, cabeçalho e menu
+        com a identidade da sua marca.
+    </span>
+
+    <span class="servico-card__texto-mobile">
+        Início, banner e menu com a identidade da sua marca.
+    </span>
+</p>
 
                 <a href="#contato" class="servico-card__link">
                   
@@ -350,13 +463,19 @@
                 </div>
 
                 <h3 class="servico-card__titulo">
-                    Loja Virtual
+                    Produtos organizados
                 </h3>
 
                 <p class="servico-card__texto">
-                    Lojas prontas para vender com pagamentos,
-                    entregas automáticas e gestão fácil.
-                </p>
+    <span class="servico-card__texto-completo">
+        Catálogo, categorias, páginas individuais dos produtos
+        e busca para facilitar a navegação.
+    </span>
+
+    <span class="servico-card__texto-mobile">
+        Catálogo, categorias, páginas de produtos e busca.
+    </span>
+</p>
 
                 <a href="#contato" class="servico-card__link">
                    
@@ -374,13 +493,19 @@
                 </div>
 
                 <h3 class="servico-card__titulo">
-                    Soluções Web
+                    Estrutura de vendas
                 </h3>
 
                 <p class="servico-card__texto">
-                    Orçamentos interativos, catálogos digitais e soluções personalizadas
-                    para facilitar o dia a dia do seu negócio.
-                </p>
+    <span class="servico-card__texto-completo">
+        Carrinho, checkout, Minha Conta e WooCommerce configurado,
+        com estrutura preparada para integração de pagamentos.
+    </span>
+
+    <span class="servico-card__texto-mobile">
+        Carrinho, checkout, Minha Conta e WooCommerce configurado.
+    </span>
+</p>
 
                 <a href="#contato" class="servico-card__link">
                   
@@ -399,14 +524,19 @@
                 </div>
 
                 <h3 class="servico-card__titulo">
-                    Produtos Digitais
+                    Conexão e confiança
                 </h3>
 
                 <p class="servico-card__texto">
-                    Produtos digitais criativos e prontos para usar, como kits, 
-                    materiais para facilitar o dia a dia do seu negócio.
-                 
-                </p>
+    <span class="servico-card__texto-completo">
+        WhatsApp, redes sociais, Sobre Nós, Contato e páginas
+        de políticas, trocas e devoluções.
+    </span>
+
+    <span class="servico-card__texto-mobile">
+        WhatsApp, redes sociais e páginas institucionais e políticas.
+    </span>
+</p>
 
                 <a href="#contato" class="servico-card__link">
                     
@@ -415,80 +545,71 @@
 
             </article>
 
-        </div>
+            <!-- MEIOS DE PAGAMENTO -->
+<article class="servico-card" data-aos="zoom-in" data-aos-delay="400">
 
-    </div>
-
-</section>
-
-<!-- ========================================
-     MUITO ALÉM DE UM SITE BONITO
-======================================== -->
-
-<section id="diferencial" class="diferencial">
-
-    <div class="diferencial__visual">
-
+    <div class="servico-card__imagem">
         <img
-            src="assets/diferencial/coracao-tecnologia.png"
-            alt="Coração tecnológico representando criatividade e inovação"
-            class="diferencial__imagem"
+            src="assets/precos/mercado-pago.png"
+            alt="Mercado Pago"
         >
-
     </div>
 
-    <div class="diferencial__conteudo">
+    <h3 class="servico-card__titulo">
+        Meios de pagamento
+    </h3>
 
-        <h2 class="diferencial__titulo">
-            Muito além de um site bonito.
-        </h2>
+    <p class="servico-card__texto">
+    <span class="servico-card__texto-completo">
+        Estrutura preparada para configurar Mercado Pago
+        ou outro meio de pagamento que definirmos.
+    </span>
 
-        <p class="diferencial__descricao">
-            Desenvolvemos experiências digitais pensadas para
-            fortalecer sua marca, transmitir confiança e transformar
-            visitantes em clientes.
-        </p>
+    <span class="servico-card__texto-mobile">
+        Estrutura preparada para integrar o meio de pagamento definido.
+    </span>
+</p>
 
-        <div class="diferencial__itens">
+</article>
 
-            <div class="diferencial-item">
-                <span class="diferencial-item__icone">✎</span>
+<!-- ENTREGA DE PRODUTOS DIGITAIS -->
+<article class="servico-card" data-aos="zoom-in" data-aos-delay="500">
 
-                <p>
-                    Design criativo e estratégico
-                </p>
-            </div>
+    <div class="servico-card__imagem">
+        <img
+            src="assets/precos/entrega-automatica.png"
+            alt="Pasta digital com símbolo de download"
+        >
+    </div>
 
-            <div class="diferencial-item">
-                <span class="diferencial-item__icone">⚙</span>
+    <h3 class="servico-card__titulo">
+        Entrega de produtos digitais
+    </h3>
 
-                <p>
-                    Tecnologia moderna
-                </p>
-            </div>
+    <p class="servico-card__texto">
+    <span class="servico-card__texto-completo">
+        Após a confirmação do pagamento, os arquivos ficam
+        disponíveis para download na loja.
+    </span>
 
-            <div class="diferencial-item">
-                <span class="diferencial-item__icone">♡</span>
+    <span class="servico-card__texto-mobile">
+        Arquivos disponíveis para download após a confirmação do pagamento.
+    </span>
+</p>
 
-                <p>
-                    Soluções personalizadas para seu negócio
-                </p>
-            </div>
-
-            <div class="diferencial-item">
-                <span class="diferencial-item__icone">😉</span>
-
-                <p>
-                    Acompanhamento e suporte próximo
-                </p>
-            </div>
+</article>
 
         </div>
 
+            <p class="servicos__observacao">
+            Adaptada para computador, tablet e celular.
+            Instagram na página inicial disponível como recurso opcional.
+            </p>
     </div>
 
-</section>
+    
 
+</section>
 
 
 <!-- ========================================
@@ -498,18 +619,12 @@
 <section id="como-funciona" class="como-funciona">
 
     <div class="como-funciona__cabecalho">
-
-        <h2 class="como-funciona__titulo">
-            Como funciona
-        </h2>
-
+        <h2 class="como-funciona__titulo">Como funciona</h2>
     </div>
 
     <div class="como-funciona__linha">
 
-        <!-- ETAPA 1 -->
         <article class="passo">
-
             <div class="passo__icone">
                 <img
                     src="assets/Como Funciona/conversa.png"
@@ -517,43 +632,19 @@
                 >
             </div>
 
-            <h3 class="passo__titulo">
-                Conversamos<br>
-                sobre sua ideia
-            </h3>
+            <h3 class="passo__titulo"><span class="passo__numero">01</span>Briefing</h3>
 
-            <p class="passo__texto">
-                Entendemos seu negócio,
-                objetivos e necessidades.
-            </p>
-
+            <p>
+    <span class="passo__texto-completo">
+        Conversamos sobre sua marca, objetivos e necessidades da loja.
+    </span>
+    <span class="passo__texto-mobile">
+        Falamos sobre sua marca e sua loja.
+    </span>
+</p>
         </article>
 
-        <!-- ETAPA 2 -->
         <article class="passo">
-
-            <div class="passo__icone">
-                <img
-                    src="assets/Como Funciona/planejamento.png"
-                    alt="Ícone de planejamento"
-                >
-            </div>
-
-            <h3 class="passo__titulo">
-                Planejamos<br>
-                a estrutura
-            </h3>
-
-            <p class="passo__texto">
-                Definimos as melhores
-                estratégias para seu projeto.
-            </p>
-
-        </article>
-
-        <!-- ETAPA 3 -->
-        <article class="passo">
-
             <div class="passo__icone">
                 <img
                     src="assets/Como Funciona/design.png"
@@ -561,82 +652,56 @@
                 >
             </div>
 
-            <h3 class="passo__titulo">
-                Criamos<br>
-                o visual
-            </h3>
+           <h3 class="passo__titulo"><span class="passo__numero">02</span>Criação</h3>
 
-            <p class="passo__texto">
-                Desenvolvemos um design
-                exclusivo e alinhado à sua marca.
-            </p>
-
+            <p>
+    <span class="passo__texto-completo">
+        Desenvolvo o layout personalizado, alinhado com a identidade da sua marca.
+    </span>
+    <span class="passo__texto-mobile">
+       Layout com a identidade da sua marca.
+    </span>
+</p>
         </article>
 
-        <!-- ETAPA 4 -->
         <article class="passo">
-
             <div class="passo__icone">
                 <img
                     src="assets/Como Funciona/desenvolvimento.png"
-                    alt="Ícone de desenvolvimento"
+                    alt="Ícone de configuração"
                 >
             </div>
 
-            <h3 class="passo__titulo">
-                Desenvolvemos<br>
-                a loja
-            </h3>
+            <h3 class="passo__titulo"><span class="passo__numero">03</span>Configuração</h3>
 
-            <p class="passo__texto">
-                Construímos tudo com tecnologia
-                segura e alta performance.
-            </p>
-
+            <p>
+    <span class="passo__texto-completo">
+        Faço a configuração da loja, produtos, recursos necessários e estrutura de vendas.
+    </span>
+    <span class="passo__texto-mobile">
+        Configuro os produtos e a estrutura de vendas.
+    </span>
+</p>
         </article>
 
-        <!-- ETAPA 5 -->
         <article class="passo">
-
-            <div class="passo__icone">
-                <img
-                    src="assets/Como Funciona/pagamento.png"
-                    alt="Ícone de pagamentos e downloand"
-                >
-            </div>
-
-            <h3 class="passo__titulo">
-                Configuramos<br>
-                pagamentos e dowloand.
-            </h3>
-
-            <p class="passo__texto">
-                Integramos as melhores formas
-                de pagamento e entrega automática.
-            </p>
-
-        </article>
-
-        <!-- ETAPA 6 -->
-        <article class="passo">
-
             <div class="passo__icone">
                 <img
                     src="assets/Como Funciona/publicacao.png"
-                    alt="Ícone de publicação"
+                    alt="Ícone de entrega"
                 >
             </div>
 
-            <h3 class="passo__titulo">
-                Sua Loja <br>
-                pronta para vender.
-            </h3>
+            <h3 class="passo__titulo"><span class="passo__numero">04</span>Entrega</h3>
 
-            <p class="passo__texto">
-                Sua loja publicada, pronta para receber
-                pedidos e vender produtos digitais.
-            </p>
-
+            <p>
+    <span class="passo__texto-completo">
+        Sua loja é entregue pronta, testada e preparada para começar a vender.
+    </span>
+    <span class="passo__texto-mobile">
+        Entrego sua loja testada e pronta para vender.
+    </span>
+</p>
         </article>
 
     </div>
@@ -694,7 +759,7 @@
             <div class="projeto-card__conteudo">
 
                 <h3 class="projeto-card__titulo">
-                    Papelaria Digital
+                    Papelaria 
                 </h3>
 
                 <p class="projeto-card__categoria">
@@ -702,7 +767,7 @@
                 </p>
 
                 <small class="projeto-card__status">
-                ✓ Projeto conceitual
+                ✓ Projeto lindo
                </small>
 
             </div>
@@ -718,12 +783,12 @@
 
            <div class="projeto-card__imagem">
     <a
-        href="assets/portfolio/atelie-encanto.png"
+        href="assets/portfolio/Etiquetas-Escolares-Fofas.png"
         class="portfolio-popup"
     >
         <img
-            src="assets/portfolio/atelie-encanto.png"
-            alt="Projeto conceitual Ateliê Encanto"
+            src="assets/portfolio/Etiquetas-Escolares-Fofas.png"
+            alt="Projeto Etiquetas-Escolares-Fofas"
         >
 
         <span class="portfolio-overlay">
@@ -736,7 +801,7 @@
             <div class="projeto-card__conteudo">
 
                 <h3 class="projeto-card__titulo">
-                    Ateliê Encanto
+                    Etiquetas 
                 </h3>
 
                 <p class="projeto-card__categoria">
@@ -744,7 +809,7 @@
                 </p>
 
                 <small class="projeto-card__status">
-    ✓ Projeto conceitual
+    ✓ Projeto fofo
 </small>
 
             </div>
@@ -778,7 +843,7 @@
             <div class="projeto-card__conteudo">
 
                 <h3 class="projeto-card__titulo">
-                    Papelaria Criativa
+                    Papelaria 
                 </h3>
 
                 <p class="projeto-card__categoria">
@@ -786,7 +851,7 @@
                 </p>
 
                 <small class="projeto-card__status">
-    ✓ Projeto conceitual
+    ✓ Projeto
 </small>
 
             </div>
@@ -828,7 +893,7 @@
                 </p>
 
                 <small class="projeto-card__status">
-    ✓ Projeto conceitual
+    ✓ Projeto doce
 </small>
 
             </div>
@@ -866,37 +931,66 @@
                 </h3>
 
                 <p class="projeto-card__categoria">
-                    Site Institucional
+                    Site 
                 </p>
 
-                <small class="projeto-card__status projeto-card__status--entregue"> ✓ Projeto real entregue </small>
+                <small class="projeto-card__status projeto-card__status--entregue"> ✓ Empresarial </small>
 
             </div>
 
         </article>
+
+
+
+        <!-- PROJETO 6 -->
+        <article
+            class="projeto-card projeto-card--real"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+        >
+
+            <div class="projeto-card__imagem">
+    <a
+        href="assets/portfolio/lojaprofessora.png"
+        class="portfolio-popup"
+    >
+        <img
+            src="assets/portfolio/lojaprofessora.png"
+            alt="Loja virtual professora"
+        >
+
+        <span class="portfolio-overlay">
+            👁 Ver projeto
+        </span>
+
+    </a>
+</div>
+
+            <div class="projeto-card__conteudo">
+
+                <h3 class="projeto-card__titulo">
+                    Lume
+                </h3>
+
+                <p class="projeto-card__categoria">
+                    Loja virtual
+                </p>
+
+                <small class="projeto-card__status projeto-card__status--entregue"> ✓ Projeto </small>
+
+            </div>
+
+        </article>
+
 
     </div>
 
 </section>
 
 <section class="portfolio-cta" data-aos="fade-up">
-
-    <div class="portfolio-cta__divider">
-        <span>✦</span>
-    </div>
-
-    <h2 class="portfolio-cta__titulo">
-        Gostou dos projetos?
-    </h2>
-
-    <p class="portfolio-cta__texto">
-        Seu projeto pode ser o próximo.
-    </p>
-
-    <div class="portfolio-cta__divider">
-        <span>✦</span>
-    </div>
-
+    <a href="https://wa.me/5564984188628" class="btn-primary" target="_blank" rel="noopener noreferrer">
+        Quero uma loja assim
+    </a>
 </section>
 
 <!-- =========================================
@@ -955,118 +1049,8 @@
 
             </article>
 
-            <!-- CARD: O QUE ESTÁ INCLUSO -->
-            <article class="inclusos">
+            
 
-                <h3 class="card-titulo">O que está incluso</h3>
-
-                <ul class="lista-check">
-                    <li>Design personalizado</li>
-                    <li>Loja responsiva para celular e tablet</li>
-                    <li>WordPress com WooCommerce</li>
-                    <li>Integração com meio de pagamento</li>
-                    <li>dowloand automático de arquivos</li>
-                    <li>Envio do link por e-mail</li>
-                    <li>Área do cliente</li>
-                    <li>Painel para cadastrar produtos</li>
-                    <li>Loja protegida com certificado SSL</li>
-                    <li>Suporte após a entrega</li>
-                </ul>
-
-            </article>
-
-        </div>
-
-        <!-- SEGUNDA LINHA -->
-        <div class="precos__cards">
-
-            <!-- O QUE VOCÊ PRECISA TER -->
-            <article class="info-card">
-
-                <h3 class="card-titulo">O que você precisa ter</h3>
-
-                <ul class="lista-check">
-                    <li>Domínio próprio</li>
-                    <li>Hospedagem WordPress</li>
-                    <li>Logo ou identidade visual</li>
-                    <li>Textos e informações da marca</li>
-                    <li>Produtos arquivos digitais</li>
-                    <li>Conta no Mercado pago</li>
-                </ul>
-
-                <div class="info-card__aviso">
-                    <strong>Não tem tudo pronto?</strong>
-                    <span>Eu te oriento em cada etapa.</span>
-                </div>
-
-            </article>
-
-            <!-- FORMAS DE PAGAMENTO -->
-            <article class="info-card info-card--pagamento">
-
-                <h3 class="card-titulo">Formas de pagamento</h3>
-
-                <p class="info-card__texto">
-                    Sua loja poderá receber pagamentos com segurança e praticidade.
-                </p>
-
-                <div class="pagamentos" aria-label="Formas de pagamento aceitas">
-
-                    <div class="pagamentos__item">
-                        <img
-                            src="assets/precos/pix.png"
-                            alt="Pix"
-                        >
-                    </div>
-
-                    <div class="pagamentos__item">
-                        <img
-                            src="assets/precos/mercado-pago.png"
-                            alt="Mercado Pago"
-                        >
-                    </div>
-
-                    <div class="pagamentos__item">
-                        <img
-                            src="assets/precos/visa.png"
-                            alt="Visa"
-                        >
-                    </div>
-
-                    <div class="pagamentos__item">
-                        <img
-                            src="assets/precos/mastercard-elo.png"
-                            alt="Mastercard e Elo"
-                        >
-                    </div>
-
-                </div>
-
-                <p class="info-card__rodape">
-                    E outras formas disponíveis na plataforma.
-                </p>
-
-            </article>
-
-            <!-- ENTREGA AUTOMÁTICA -->
-            <article class="info-card info-card--entrega">
-
-                <h3 class="card-titulo">Entrega automática</h3>
-
-                <p class="info-card__texto">
-                    Após a confirmação do pagamento, o cliente recebe o arquivo automaticamente.
-                </p>
-
-                <div class="info-card__ilustracao">
-                    <img
-                        src="assets/precos/entrega-automatica.png"
-                        alt="Pasta digital com símbolo de download"
-                    >
-                </div>
-
-            </article>
-
-        </div>
 
         <!-- PERGUNTAS FREQUENTES -->
         <section id="faq" class="faq">
@@ -1198,22 +1182,17 @@
 
     <div class="cta-projeto__box">
 
-        <div class="cta-projeto__mascote">
-            <img
-                src="assets/footer/menina-footer.png"
-                alt="Mascote da Cris Lopes Art"
-            >
-        </div>
+       
 
         <div class="cta-projeto__conteudo">
 
             <h2 class="cta-projeto__titulo">
-    Sua ideia merece uma presença digital profissional.
+      Vamos criar sua loja virtual?
 </h2>
 
             <p class="cta-projeto__texto">
-    Vamos criar uma experiência que tenha a personalidade
-    da sua marca e ajude você a vender com mais confiança.
+    Me conte sobre sua marca e 
+    vamos conversar sobre o seu projeto.
 </p>
 
         </div>
@@ -1227,17 +1206,12 @@
                 class="cta-projeto__botao"
             >
                 <span class="cta-projeto__whatsapp">◉</span>
-                Falar com a Cris Lopes Art
+                Conversar com a Cris
             </a>
 
         </div>
 
-        <div class="cta-projeto__coracao">
-            <img
-                src="assets/footer/coracao-3d.png"
-                alt="Coração rosa"
-            >
-        </div>
+
 
     </div>
 
@@ -1269,15 +1243,18 @@
             </div>
 
             <h3 class="sobre-final__slogan">
-                Tecnologia simples.<br>
-                Resultados reais.
+               <br>
+                Sua loja pronta para vender.
             </h3>
 
             <p class="sobre-final__texto">
-                A Cris Lopes Art nasceu da minha vontade de transformar ideias em experiências digitais bonitas, estratégicas e funcionais.
-Desenvolvo sites, lojas virtuais, sistemas e soluções digitais para empresas que desejam crescer, fortalecer sua marca e se conectar melhor com seus clientes.
-Acompanho cada etapa do projeto com cuidado, buscando criar uma presença digital profissional, personalizada e com a verdadeira identidade de cada negócio.
-            </p>
+    Sou Cristina, a pessoa por trás da Cris Lopes Art.
+    Desenvolvo lojas virtuais personalizadas, unindo design
+    e tecnologia para valorizar sua marca e facilitar suas
+    vendas online. Acompanho você desde a primeira conversa
+    até a entrega, com atenção aos detalhes e orientação
+    em cada etapa.
+</p>
 
         </div>
 
@@ -1289,7 +1266,7 @@ Acompanho cada etapa do projeto com cuidado, buscando criar uma presença digita
             <div class="sobre-final__circulo">
 
                 <img
-                    src="assets/mascot/mascote sobre.png"
+                    src="assets/sobre nós/cris-sobre.png"
                     alt="Mascote da Cris Lopes Art"
                     class="sobre-final__mascote"
                 >
@@ -1331,136 +1308,7 @@ Acompanho cada etapa do projeto com cuidado, buscando criar uma presença digita
 
 <footer class="rodape-final">
 
-    <div class="rodape-final__container">
 
-        <!-- MARCA -->
-        <div class="rodape-final__marca">
-
-            <a href="#inicio" class="rodape-final__logo">
-
-                <img
-                    src="assets/logos/logo bc com rosa.png"
-                    alt="Cris Lopes Art"
-                >
-
-            </a>
-
-            <p class="rodape-final__assinatura">
-                Tecnologia simples.<br>
-                Resultados reais.
-            </p>
-
-            <div class="rodape-final__redes">
-
-                <div class="rodape-final__redes">
-
-    <a
-        href="https://www.instagram.com/crislopesart/"
-        aria-label="Instagram"
-        class="rodape-final__rede"
-    >
-         <i class="bi bi-instagram"></i>
-    </a>
-
-    <a
-        href="https://wa.me/5564984188628"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="WhatsApp"
-        class="rodape-final__rede"
-    >
-        <i class="bi bi-whatsapp"></i>
-    </a>
-
-    <a
-        href="mailto:contato@crislopesart.com.br"
-        aria-label="E-mail"
-        class="rodape-final__rede"
-    >
-        <i class="bi bi-envelope"></i>
-    </a>
-
-</div>
-
-            </div>
-
-        </div>
-
-        <!-- NAVEGAÇÃO -->
-        <div class="rodape-final__coluna">
-
-            <h3>Navegação</h3>
-
-            <nav aria-label="Navegação do rodapé">
-
-                <a href="#hero">Início</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#portfolio">Portfólio</a>
-                <a href="#precos">Preços</a>
-                <a href="#contato">Contato</a>
-
-            </nav>
-
-        </div>
-
-        <!-- SERVIÇOS -->
-        <div class="rodape-final__coluna">
-
-            <h3>Serviços</h3>
-
-            <nav aria-label="Serviços">
-
-                <a href="#servicos">Sites</a>
-                <a href="#servicos">Lojas Virtuais</a>
-                <a href="#servicos">Soluções web</a>
-                <a href="#servicos">Produtos digitais</a>
-
-            </nav>
-
-        </div>
-
-        <!-- SUPORTE -->
-        <div class="rodape-final__coluna">
-
-            <h3>Suporte</h3>
-
-            <nav aria-label="Suporte">
-
-                <a href="#faq">Perguntas Frequentes</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Uso</a>
-
-            </nav>
-
-        </div>
-
-        <!-- CONTATO -->
-        <div class="rodape-final__coluna rodape-final__contato">
-
-            <h3>Contato</h3>
-
-            <a
-                href="https://www.crislopesart.com.br/etiquetas-escolares/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <span>◉</span>  
-                etiquetas-escolares
-            </a>
-
-            <a href="#">
-                <span>◉</span>
-                @crislopesart
-            </a>
-
-            <a href="mailto:contato@crislopesart.com.br">
-                <span>✉</span>
-                contato@crislopesart.com.br
-            </a>
-
-        </div>
-
-    </div>
 
     <!-- LINHA INFERIOR -->
     <div class="rodape-final__base">
@@ -1476,10 +1324,10 @@ Acompanho cada etapa do projeto com cuidado, buscando criar uma presença digita
     </div>
 
     <p class="rodape-final__copyright">
-        © 2026
-        <strong>Cris Lopes Art</strong>
-        • Todos os direitos reservados.
-    </p>
+    Feito com ♡ carinho • © 2026
+    <strong>Cris Lopes Art</strong>
+    • Todos os direitos reservados.
+</p>
 </footer>
 
 <!-- LIGHTBOX DO PORTFÓLIO -->

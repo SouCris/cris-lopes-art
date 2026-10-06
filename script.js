@@ -160,3 +160,34 @@ if (precoValor) {
 
     precoObserver.observe(precoValor);
 }
+
+const menuToggle = document.querySelector(".menu-toggle");
+const menuPrincipal = document.getElementById("menu-principal");
+
+if (menuToggle && menuPrincipal) {
+    const fecharMenu = () => {
+        menuPrincipal.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Abrir menu");
+        menuToggle.textContent = "☰";
+    };
+
+    menuToggle.addEventListener("click", () => {
+        const aberto = menuPrincipal.classList.toggle("is-open");
+
+        menuToggle.setAttribute("aria-expanded", String(aberto));
+        menuToggle.setAttribute(
+            "aria-label",
+            aberto ? "Fechar menu" : "Abrir menu"
+        );
+        menuToggle.textContent = aberto ? "×" : "☰";
+    });
+
+    menuPrincipal.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", fecharMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") fecharMenu();
+    });
+}
