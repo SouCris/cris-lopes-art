@@ -1,0 +1,35 @@
+MIMOS DA CRIS — PÁGINA DE LINKS PARA INSTAGRAM
+
+Esta página usa o visual EXATO dos cartões da imagem de referência:
+- artes: pasta assets
+- HTML: index.html
+- aparência: style.css
+- destinos dos botões: script.js (objeto LINKS no início)
+
+COMO ABRIR NO VS CODE
+1) Extraia este ZIP em uma pasta, por exemplo mimos-da-cris-links.
+2) No VS Code, use Arquivo > Abrir Pasta e selecione a pasta.
+3) Abra index.html com a extensão Live Server, ou no navegador.
+4) Para alterar os links, edite apenas o script.js, no bloco LINKS.
+
+ANTES DE PUBLICAR
+- PENDENTE: cole o URL do checkout Kiwify do Papel de Carta Cristão no campo papelDeCarta do script.js. NÃO use dashboard.kiwify.com.
+- O botão de etiquetas já usa o checkout Kiwify conhecido: https://pay.kiwify.com.br/Fe74RXt.
+- Confirme se o WhatsApp atual (64) 98418-8628 atende a Mimos da Cris.
+- Confirme se o e-mail crislopes.contato26@gmail.com já está funcionando.
+- O botão "Quer ter sua loja virtual?" abre https://www.crislopesart.com.br/.
+- Quando a loja Mimos da Cris estiver pronta, substitua a string vazia da propriedade loja.
+- Teste todos os botões no celular.
+
+PUBLICAÇÃO SEM MENSALIDADE
+1) Se publicar dentro do repositório atual, copie esta pasta como mimos-da-cris na raiz do projeto. Confira as regras do serviço de hospedagem para páginas comerciais antes de publicar.
+2) Você também pode hospedar o projeto no Cloudflare Pages e usar o domínio já existente mediante configuração de rotas/subdomínio.
+3) Como o site é HTML estático, não há build: use comando de build vazio,
+   e diretório de saída como raiz do repositório ('.') quando configurável.
+4) Copie o endereço publicado para a bio do Instagram.
+
+OBSERVAÇÃO
+Para preservar exatamente o design escolhido, o cabeçalho e os cartões
+são imagens extraídas da referência, enquanto os botões são links reais.
+O botão "Quer ter sua loja virtual?" é feito em HTML/CSS e seu texto pode ser editado no index.html.
+Nos quatro cartões com imagens, para trocar o TEXTO será preciso atualizar a arte. Os endereços dos links são editáveis normalmente no JS.
