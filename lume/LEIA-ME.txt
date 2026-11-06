@@ -1,0 +1,9 @@
+LUME EDUCAÇÃO — DEMONSTRAÇÃO
+
+Copie a pasta lume para a raiz do seu projeto cris-lopes-art.
+Abra lume/index.html pelo Live Server para testar.
+Após publicar no GitHub Pages, endereço: https://crislopesart.com.br/lume/
+No card Lume, use href="lume/" class="portfolio-popup" data-tipo="site".
+Mantenha o src da capa atual.
+
+Esta versão preserva a página inicial salva do WordPress. Busca filtra os 12 produtos recebidos e clicar em produtos abre a prévia. Não inclui outras páginas, paginação, login, carrinho ou pagamentos reais.

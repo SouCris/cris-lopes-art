@@ -1,30 +1,67 @@
 const lightbox = document.getElementById("lightbox");
-const lightboxImagem = document.querySelector(".lightbox__imagem");
-const fechar = document.querySelector(".lightbox__fechar");
+const lightboxImagem = lightbox.querySelector(".lightbox__imagem");
+const lightboxSite = lightbox.querySelector(".lightbox__site");
+const fechar = lightbox.querySelector(".lightbox__fechar");
 
-document.querySelectorAll(".portfolio-popup").forEach(link => {
+let linkAnterior = null;
+let overflowAnterior = "";
 
+const fecharLightbox = () => {
+    if (!lightbox.classList.contains("ativo")) return;
+
+    lightbox.classList.remove("ativo");
+
+    lightboxSite.removeAttribute("src");
+    lightboxSite.hidden = true;
+
+    lightboxImagem.removeAttribute("src");
+    lightboxImagem.hidden = true;
+
+    document.body.style.overflow = overflowAnterior;
+    linkAnterior?.focus();
+};
+
+document.querySelectorAll(".portfolio-popup").forEach((link) => {
     link.addEventListener("click", function (e) {
         e.preventDefault();
 
-        lightboxImagem.src = this.href;
+        if (!lightbox.classList.contains("ativo")) {
+            overflowAnterior = document.body.style.overflow;
+        }
+
+        linkAnterior = this;
+
+        lightboxImagem.hidden = true;
+        lightboxImagem.removeAttribute("src");
+
+        lightboxSite.hidden = true;
+        lightboxSite.removeAttribute("src");
+
+        if (this.dataset.tipo === "site") {
+            lightboxSite.src = this.href;
+            lightboxSite.hidden = false;
+        } else {
+            lightboxImagem.src = this.href;
+            lightboxImagem.alt =
+                this.querySelector("img")?.alt || "Projeto do portfólio";
+            lightboxImagem.hidden = false;
+        }
+
         lightbox.classList.add("ativo");
+        lightbox.scrollTop = 0;
+        document.body.style.overflow = "hidden";
+        fechar.focus();
     });
-
 });
 
-fechar.addEventListener("click", () => {
-    lightbox.classList.remove("ativo");
-});
+fechar.addEventListener("click", fecharLightbox);
 
 lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-        lightbox.classList.remove("ativo");
-    }
+    if (e.target === lightbox) fecharLightbox();
 });
 
-document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") fecharLightbox();
 });
 
 // ========================================

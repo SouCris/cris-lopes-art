@@ -4380,7 +4380,7 @@ body{
     overflow-x:hidden;
 }
 
-/* ========================================
+    /* ========================================
    LIGHTBOX DO PORTFÓLIO
 ======================================== */
 
@@ -4388,12 +4388,14 @@ body{
     position: fixed;
     inset: 0;
     z-index: 9999;
-    padding: 35px;
+    padding: 64px 35px 24px;
+    box-sizing: border-box;
 
     display: none;
     align-items: flex-start;
-    overflow-y: auto;
     justify-content: center;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(8px);
@@ -4401,6 +4403,10 @@ body{
 
 .lightbox.ativo {
     display: flex;
+}
+
+.lightbox [hidden] {
+    display: none !important;
 }
 
 .lightbox__imagem {
@@ -4415,10 +4421,22 @@ body{
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
+.lightbox__site {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    height: calc(100dvh - 88px);
+    flex-shrink: 0;
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
 .lightbox__fechar {
-    position: absolute;
-    top: 30px;
-    right: 40px;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1;
 
     width: 46px;
     height: 46px;
@@ -4426,7 +4444,7 @@ body{
     border-radius: 50%;
 
     color: #ffffff;
-    background: none;
+    background: #262026;
     font-size: 40px;
     line-height: 1;
     cursor: pointer;
@@ -4436,18 +4454,18 @@ body{
 @media (max-width: 768px) {
     .lightbox {
         padding: 64px 10px 24px;
-        box-sizing: border-box;
     }
 
     .lightbox__imagem {
-        width: 100%;
         max-width: 100%;
-        max-height: calc(100dvh - 88px);
         border-radius: 12px;
     }
 
+    .lightbox__site {
+        border-radius: 8px;
+    }
+
     .lightbox__fechar {
-        top: 12px;
         right: 12px;
     }
 }

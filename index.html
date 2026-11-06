@@ -735,31 +735,36 @@
     <!-- PROJETOS -->
     <div class="portfolio__grid">
 
-        <!-- PROJETO 1 -->
+
+        <!-- PROJETO  1 Lume Educação   -->
         <article
-            class="projeto-card" data-aos="zoom-in"data-aos-delay="0"
+            class="projeto-card projeto-card--real"
+            data-aos="zoom-in"
+            data-aos-delay="400"
         >
 
             <div class="projeto-card__imagem">
     <a
-        href="assets/portfolio/loja papelaria digital.png"
-        class="portfolio-popup"
-    >
+    href="lume/index.html"
+    class="portfolio-popup"
+    data-tipo="site"
+>
         <img
-            src="assets/portfolio/loja papelaria digital.png"
-            alt="Loja Virtual Papelaria Digital"
+            src="assets/portfolio/Lume-educacao.png"
+            alt="Lume Educação"
         >
 
         <span class="portfolio-overlay">
             👁 Ver projeto
         </span>
+
     </a>
 </div>
 
             <div class="projeto-card__conteudo">
 
                 <h3 class="projeto-card__titulo">
-                    Papelaria 
+                    Lume Educação
                 </h3>
 
                 <p class="projeto-card__categoria">
@@ -767,12 +772,14 @@
                 </p>
 
                 <small class="projeto-card__status">
-                ✓ Projeto lindo
-               </small>
+    ✓ WordPress
+</small>
 
             </div>
 
         </article>
+
+        
 
         <!-- PROJETO 2 -->
         <article
@@ -782,9 +789,11 @@
         >
 
            <div class="projeto-card__imagem">
-    <a
-        href="assets/portfolio/Etiquetas-Escolares-Fofas.png"
-        class="portfolio-popup"
+            <a
+                href="https://crislopesart.com.br/etiquetas-escolares/"
+                class="portfolio-popup"
+                data-tipo="site"
+            >
     >
         <img
             src="assets/portfolio/Etiquetas-Escolares-Fofas.png"
@@ -858,34 +867,31 @@
 
         </article>
 
-        <!-- PROJETO 4 -->
+        <!-- PROJETO 1 -->
         <article
-            class="projeto-card"
-            data-aos="zoom-in"
-            data-aos-delay="300"
+            class="projeto-card" data-aos="zoom-in"data-aos-delay="0"
         >
 
             <div class="projeto-card__imagem">
     <a
-        href="assets/portfolio/doce-papel.png"
+        href="assets/portfolio/papelaria-digital-completo.png"
         class="portfolio-popup"
     >
         <img
-            src="assets/portfolio/doce-papel.png"
-            alt="Projeto conceitual Doce Papel"
+            src="assets/portfolio/loja papelaria digital.png"
+            alt="Loja Virtual Papelaria Digital"
         >
 
         <span class="portfolio-overlay">
             👁 Ver projeto
         </span>
-
     </a>
 </div>
 
             <div class="projeto-card__conteudo">
 
                 <h3 class="projeto-card__titulo">
-                    Doce Papel
+                    Papelaria 
                 </h3>
 
                 <p class="projeto-card__categoria">
@@ -893,8 +899,8 @@
                 </p>
 
                 <small class="projeto-card__status">
-    ✓ Projeto doce
-</small>
+                ✓ Projeto lindo
+               </small>
 
             </div>
 
@@ -1334,22 +1340,22 @@
 </footer>
 
 <!-- LIGHTBOX DO PORTFÓLIO -->
-
 <div class="lightbox" id="lightbox">
-
     <button
         class="lightbox__fechar"
         type="button"
-        aria-label="Fechar imagem"
+        aria-label="Fechar projeto"
     >
         ×
     </button>
 
-    <img
-        class="lightbox__imagem"
-        src=""
-        alt=""
-    >
+    <img class="lightbox__imagem" alt="" hidden>
+
+    <iframe
+        class="lightbox__site"
+        title="Visualização do projeto"
+        hidden
+    ></iframe>
 </div>
 
 
