@@ -4391,7 +4391,8 @@ body{
     padding: 35px;
 
     display: none;
-    align-items: center;
+    align-items: flex-start;
+    overflow-y: auto;
     justify-content: center;
 
     background: rgba(0, 0, 0, 0.85);
@@ -4404,10 +4405,11 @@ body{
 
 .lightbox__imagem {
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 1163px;
+    max-height: none;
+    flex-shrink: 0;
     object-fit: contain;
     border-radius: 18px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
