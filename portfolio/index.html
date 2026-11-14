@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Portf&oacute;lio | Cris Lopes Art
+  </title>
+  <meta content="Conhe&ccedil;a os sites, lojas virtuais e projetos interativos desenvolvidos pela Cris Lopes Art." name="description"/>
+  <link href="https://crislopesart.com.br/portfolio/" rel="canonical"/>
+  <link href="../assets/favicon.png" rel="icon" type="image/png"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="../style.css" rel="stylesheet"/>
+  <link href="./portfolio.css?v=20261114-filters1" rel="stylesheet"/>
+ </head>
+ <body class="pagina-portfolio">
+  <div hidden="" id="folio-server-warning" role="status">
+   Pr&eacute;via local: para visualizar os projetos corretamente, abra portfolio/index.html com Live Server no VS Code (endere&ccedil;o http://127.0.0.1:5500 ou localhost).
+  </div>
+  <header id="inicio">
+   <div class="container header-content">
+    <a aria-label="Cris Lopes Art - P&aacute;gina inicial" class="logo" href="../index.html">
+     <img alt="Cris Lopes Art" src="../assets/logos/logo bc com rosa.png"/>
+    </a>
+    <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu" class="menu-toggle" type="button">
+     ☰
+    </button>
+    <nav aria-label="Navega&ccedil;&atilde;o principal" class="nav-desktop" id="menu-principal">
+     <ul class="menu">
+      <li>
+       <a href="../index.html#hero">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="../index.html#publico">
+        P&uacute;blico
+       </a>
+      </li>
+      <li>
+       <a href="../index.html#como-comecar">
+        Como come&ccedil;ar
+       </a>
+      </li>
+      <li>
+       <a href="../index.html#servicos">
+        Loja
+       </a>
+      </li>
+      <li>
+       <a href="../index.html#como-funciona">
+        Etapas
+       </a>
+      </li>
+      <li>
+       <a aria-current="page" class="active" href="./index.html">
+        Portf&oacute;lio
+       </a>
+      </li>
+      <li>
+       <a href="../index.html#precos">
+        Pre&ccedil;os
+       </a>
+      </li>
+      <li>
+       <a href="../index.html#faq">
+        Faq
+       </a>
+      </li>
+      <li>
+       <a href="../index.html#sobre">
+        Sobre
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <a class="btn-menu" href="https://wa.me/5564984188628?text=Ol%C3%A1%21%20Quero%20solicitar%20um%20or%C3%A7amento." rel="noopener noreferrer" target="_blank">
+     Solicitar or&ccedil;amento
+    </a>
+   </div>
+  </header>
+  <main>
+   <!-- 01 — BANNER DO PORTFÓLIO -->
+   <section aria-labelledby="folio-title" class="folio-hero">
+    <div class="folio-wrap folio-hero-layout">
+     <div class="folio-hero-copy">
+      <span class="folio-kicker">
+       ✦ MEUS PROJETOS
+      </span>
+      <h1 id="folio-title">
+       Portf&oacute;lio
+       <span class="folio-heart">
+        ♡
+       </span>
+      </h1>
+      <p>
+       Conhe&ccedil;a alguns dos sites, lojas virtuais e projetos interativos que desenvolvi com criatividade, carinho e tecnologia.
+      </p>
+      <a class="folio-hero-button" href="#projetos">
+       Explorar projetos
+       <span aria-hidden="true">
+        &darr;
+       </span>
+      </a>
+     </div>
+     <div aria-hidden="true" class="folio-hero-visual">
+      <div class="folio-circle folio-circle-one">
+      </div>
+      <div class="folio-circle folio-circle-two">
+      </div>
+      <div class="folio-laptop">
+       <div class="folio-screen">
+        <img alt="" src="../assets/logos/logo bc com rosa.png"/>
+       </div>
+       <div class="folio-laptop-base">
+       </div>
+      </div>
+      <span class="folio-float folio-float-a">
+       ✦
+      </span>
+      <span class="folio-float folio-float-b">
+       ♡
+      </span>
+      <span class="folio-float folio-float-c">
+       ✿
+      </span>
+     </div>
+    </div>
+   </section>
+   <!-- 02 — CARDS DOS PROJETOS -->
+   <section class="folio-projects folio-wrap" id="projetos">
+    <div class="folio-section-heading">
+     <div>
+      <span class="folio-eyebrow">
+       TRABALHOS SELECIONADOS
+      </span>
+      <h2>
+       Projetos em destaque
+      </h2>
+     </div>
+     <p>
+      Explore cada categoria e navegue pelas setas.
+     </p>
+    </div>
+    <div aria-label="Filtrar projetos" class="folio-category-filters" role="group">
+     <button aria-pressed="true" class="is-active" data-filter="todos" type="button">
+      Todos os projetos
+     </button>
+     <button aria-pressed="false" data-filter="lojas" type="button">
+      Lojas Virtuais
+     </button>
+     <button aria-pressed="false" data-filter="sites" type="button">
+      Sites Institucionais e Interativos
+     </button>
+     <button aria-pressed="false" data-filter="landing" type="button">
+      Landing Pages e P&aacute;ginas Especiais
+     </button>
+    </div>
+    <!-- LOJAS VIRTUAIS -->
+    <section aria-labelledby="titulo-lojas" class="folio-category" data-filter-section="lojas">
+     <div class="folio-category-header">
+      <div>
+       <span class="folio-category-number">
+        01 / MEUS TRABALHOS
+       </span>
+       <h2 id="titulo-lojas">
+        Lojas Virtuais
+       </h2>
+       <p>
+        Lojas e vitrines digitais criadas para apresentar produtos e facilitar compras.
+       </p>
+      </div>
+     </div>
+     <div class="folio-carousel" data-carousel="lojas">
+      <div aria-label="Projetos: Lojas Virtuais" class="folio-carousel-track" id="carrossel-lojas" tabindex="0">
+       <article class="folio-card" data-category="lojas">
+        <div class="folio-card-image">
+         <span class="folio-type">
+          🛍 Loja virtual
+         </span>
+         <a aria-haspopup="dialog" aria-label="Abrir Lume Educa&ccedil;&atilde;o" class="folio-image-link" data-preview-type="site" data-preview-url="../lume/index.html" href="../lume/index.html">
+          <img alt="Pr&eacute;via da loja Lume Educa&ccedil;&atilde;o" loading="lazy" src="../assets/portfolio/Lume-educacao.png"/>
+         </a>
+        </div>
+        <div class="folio-card-content">
+         <h3>
+          Lume Educa&ccedil;&atilde;o
+         </h3>
+         <p>
+          Vitrine demonstrativa de produtos digitais e materiais pedag&oacute;gicos.
+         </p>
+         <div class="folio-tags">
+          <span>
+           HTML
+          </span>
+          <span>
+           CSS
+          </span>
+          <span>
+           WordPress
+          </span>
+          <span>
+           WooCommerce
+          </span>
+         </div>
+         <a aria-haspopup="dialog" data-preview-type="site" data-preview-url="../lume/index.html" href="../lume/index.html">
+          Ver projeto
+          <span aria-hidden="true">
+           &nearrow;
+          </span>
+         </a>
+        </div>
+       </article>
+       <article class="folio-card" data-category="lojas">
+        <div class="folio-card-image">
+         <span class="folio-type">
+          🛍 Loja virtual
+         </span>
+         <a aria-haspopup="dialog" aria-label="Abrir Etiquetas Escolares" class="folio-image-link" data-preview-type="site" data-preview-url="../etiquetas-escolares/index.html" href="../etiquetas-escolares/index.html">
+          <img alt="Pr&eacute;via do projeto Etiquetas Escolares" loading="lazy" src="../assets/portfolio/Etiquetas-Escolares-Fofas.png"/>
+         </a>
+        </div>
+        <div class="folio-card-content">
+         <h3>
+          Etiquetas Escolares
+         </h3>
+         <p>
+          Projeto de vitrine digital com visual delicado e navega&ccedil;&atilde;o responsiva.
+         </p>
+         <div class="folio-tags">
+          <span>
+           HTML
+          </span>
+          <span>
+           CSS
+          </span>
+          <span>
+           JavaScript
+          </span>
+         </div>
+         <a aria-haspopup="dialog" data-preview-type="site" data-preview-url="../etiquetas-escolares/index.html" href="../etiquetas-escolares/index.html">
+          Ver projeto
+          <span aria-hidden="true">
+           &nearrow;
+          </span>
+         </a>
+        </div>
+       </article>
+       <article class="folio-card" data-category="lojas">
+        <div class="folio-card-image">
+         <span class="folio-type">
+          🛍 Loja virtual
+         </span>
+         <a aria-label="Abrir Achadinho Digital" class="folio-image-link" data-open-external="true" data-preview-type="site" data-preview-url="https://www.achadinhodigital.com/" href="https://www.achadinhodigital.com/" rel="noopener noreferrer" target="_blank">
+          <img alt="Pr&eacute;via Achadinho Digital" loading="lazy" src="../assets/portfolio/achadinho-digital-mockup.png"/>
+         </a>
+        </div>
+        <div class="folio-card-content">
+         <h3>
+          Achadinho Digital
+         </h3>
+         <p>
+          Projeto de loja digital com apresenta&ccedil;&atilde;o de produtos e identidade personalizada.
+         </p>
+         <div class="folio-tags">
+          <span>
+           E-commerce
+          </span>
+          <span>
+           Jumpseller
+          </span>
+         </div>
+         <a data-open-external="true" data-preview-type="site" data-preview-url="https://www.achadinhodigital.com/" href="https://www.achadinhodigital.com/" rel="noopener noreferrer" target="_blank">
+          Ver projeto &nearrow;
+         </a>
+        </div>
+       </article>
+       <article class="folio-card" data-category="lojas">
+        <div class="folio-card-image">
+         <span class="folio-type">
+          🛍 Loja virtual
+         </span>
+         <a aria-haspopup="dialog" aria-label="Abrir Papelaria Digital" class="folio-image-link" data-preview-type="image" data-preview-url="../assets/portfolio/papelaria-digital-completo.png" href="../assets/portfolio/papelaria-digital-completo.png">
+          <img alt="Pr&eacute;via da Papelaria Digital" loading="lazy" src="../assets/portfolio/loja papelaria digital.png"/>
+         </a>
+        </div>
+        <div class="folio-card-content">
+         <h3>
+          Papelaria Digital
+         </h3>
+         <p>
+          Conceito de loja de arquivos digitais, com vitrine de produtos criativos.
+         </p>
+         <div class="folio-tags">
+          <span>
+           WordPress
+          </span>
+          <span>
+           WooCommerce
+          </span>
+         </div>
+         <a aria-haspopup="dialog" data-preview-type="image" data-preview-url="../assets/portfolio/papelaria-digital-completo.png" href="../assets/portfolio/papelaria-digital-completo.png">
+          Ver apresenta&ccedil;&atilde;o
+          <span aria-hidden="true">
+           &nearrow;
+          </span>
+         </a>
+        </div>
+       </article>
+      </div>
+      <div aria-label="Navega&ccedil;&atilde;o do carrossel de Lojas Virtuais" class="folio-carousel-controls">
+       <button aria-controls="carrossel-lojas" aria-label="Ver projetos anteriores" class="folio-arrow folio-prev" type="button">
+        &lsaquo;
+       </button>
+       <div aria-label="P&aacute;ginas do carrossel" class="folio-pages">
+       </div>
+       <button aria-controls="carrossel-lojas" aria-label="Ver pr&oacute;ximos projetos" class="folio-arrow folio-next" type="button">
+        &rsaquo;
+       </button>
+      </div>
+     </div>
+    </section>
+    <!-- SITES INSTITUCIONAIS E INTERATIVOS -->
+    <section aria-labelledby="titulo-sites" class="folio-category" data-filter-section="sites">
+     <div class="folio-category-header">
+      <div>
+       <span class="folio-category-number">
+        02 / MEUS TRABALHOS
+       </span>
+       <h2 id="titulo-sites">
+        Sites Institucionais e Interativos
+       </h2>
+       <p>
+        Experi&ecirc;ncias digitais para empresas e projetos com anima&ccedil;&otilde;es.
+       </p>
+      </div>
+     </div>
+     <div class="folio-carousel" data-carousel="sites">
+      <div aria-label="Projetos: Sites Institucionais e Interativos" class="folio-carousel-track" id="carrossel-sites" tabindex="0">
+       <article class="folio-card" data-category="sites">
+        <div class="folio-card-image">
+         <span class="folio-type">
+          ⌘ Site profissional
+         </span>
+         <a aria-haspopup="dialog" aria-label="Abrir Total Limp" class="folio-image-link" data-preview-type="site" data-preview-url="https://totalimprv.com.br/" href="https://totalimprv.com.br/">
+          <img alt="Pr&eacute;via do site Total Limp" loading="lazy" src="../assets/portfolio/total-limp.png"/>
+         </a>
+        </div>
+        <div class="folio-card-content">
+         <h3>
+          Total Limp
+         </h3>
+         <p>
+          Site institucional responsivo, desenvolvido para apresentar servi&ccedil;os e facilitar o contato.
+         </p>
+         <div class="folio-tags">
+          <span>
+           React
+          </span>
+          <span>
+           TypeScript
+          </span>
+          <span>
+           Tailwind
+          </span>
+         </div>
+         <a aria-haspopup="dialog" data-preview-type="site" data-preview-url="https://totalimprv.com.br/" href="https://totalimprv.com.br/">
+          Ver projeto
+          <span aria-hidden="true">
+           &nearrow;
+          </span>
+         </a>
+        </div>
+       </article>
+       <article class="folio-card" data-category="interativos">
+        <div class="folio-card-image">
+         <span class="folio-type">
+          ✦ Projeto interativo
+         </span>
+         <a aria-haspopup="dialog" aria-label="Abrir Lili &amp; Glac&ecirc;" class="folio-image-link" data-preview-type="site" data-preview-url="https://crislopesart.com.br/portfolio/lili-glace/" href="https://crislopesart.com.br/portfolio/lili-glace/">
+          <img alt="Lili &amp; Glac&ecirc; em um monitor real, em uma mesa delicada" loading="lazy" src="./images/lili-glace-mockup.png"/>
+         </a>
+        </div>
+        <div class="folio-card-content">
+         <h3>
+          Lili &amp; Glac&ecirc;
+         </h3>
+         <p>
+          Experi&ecirc;ncia imersiva de uma doceria, com anima&ccedil;&otilde;es e intera&ccedil;&otilde;es na rolagem.
+         </p>
+         <div class="folio-tags">
+          <span>
+           React
+          </span>
+          <span>
+           TypeScript
+          </span>
+          <span>
+           GSAP
+          </span>
+         </div>
+         <a aria-haspopup="dialog" data-preview-type="site" data-preview-url="https://crislopesart.com.br/portfolio/lili-glace/" href="https://crislopesart.com.br/portfolio/lili-glace/">
+          Visitar site
+          <span aria-hidden="true">
+           &nearrow;
+          </span>
+         </a>
+        </div>
+       </article>
+      </div>
+      <div aria-label="Navega&ccedil;&atilde;o do carrossel de Sites Institucionais e Interativos" class="folio-carousel-controls">
+       <button aria-controls="carrossel-sites" aria-label="Ver projetos anteriores" class="folio-arrow folio-prev" type="button">
+        &lsaquo;
+       </button>
+       <div aria-label="P&aacute;ginas do carrossel" class="folio-pages">
+       </div>
+       <button aria-controls="carrossel-sites" aria-label="Ver pr&oacute;ximos projetos" class="folio-arrow folio-next" type="button">
+        &rsaquo;
+       </button>
+      </div>
+     </div>
+    </section>
+    <!-- LANDING PAGES E PÁGINAS ESPECIAIS -->
+    <section aria-labelledby="titulo-landing" class="folio-category" data-filter-section="landing">
+     <div class="folio-category-header">
+      <div>
+       <span class="folio-category-number">
+        03 / MEUS TRABALHOS
+       </span>
+       <h2 id="titulo-landing">
+        Landing Pages e P&aacute;ginas Especiais
+       </h2>
+       <p>
+        P&aacute;ginas personalizadas para divulgar marcas, servi&ccedil;os e links.
+       </p>
+      </div>
+     </div>
+     <div class="folio-carousel" data-carousel="landing">
+      <div aria-label="Projetos: Landing Pages e P&aacute;ginas Especiais" class="folio-carousel-track" id="carrossel-landing" tabindex="0">
+       <article class="folio-card" data-category="paginas">
+        <div class="folio-card-image">
+         <span class="folio-type">
+          ♡ P&aacute;gina especial
+         </span>
+         <a aria-haspopup="dialog" aria-label="Abrir Mimos da Cris" class="folio-image-link" data-preview-type="site" data-preview-url="../mimos-da-cris/index.html" href="../mimos-da-cris/index.html">
+          <img alt="Pr&eacute;via da p&aacute;gina Mimos da Cris" loading="lazy" src="../assets/portfolio/mimos-da-cris-mockup.png"/>
+         </a>
+        </div>
+        <div class="folio-card-content">
+         <h3>
+          Mimos da Cris
+         </h3>
+         <p>
+          P&aacute;gina de links personalizada, com navega&ccedil;&atilde;o simples e visual autoral.
+         </p>
+         <div class="folio-tags">
+          <span>
+           HTML
+          </span>
+          <span>
+           CSS
+          </span>
+          <span>
+           JavaScript
+          </span>
+         </div>
+         <a aria-haspopup="dialog" data-preview-type="site" data-preview-url="../mimos-da-cris/index.html" href="../mimos-da-cris/index.html">
+          Ver projeto
+          <span aria-hidden="true">
+           &nearrow;
+          </span>
+         </a>
+        </div>
+       </article>
+      </div>
+      <div aria-label="Navega&ccedil;&atilde;o do carrossel de Landing Pages e P&aacute;ginas Especiais" class="folio-carousel-controls">
+       <button aria-controls="carrossel-landing" aria-label="Ver projetos anteriores" class="folio-arrow folio-prev" type="button">
+        &lsaquo;
+       </button>
+       <div aria-label="P&aacute;ginas do carrossel" class="folio-pages">
+       </div>
+       <button aria-controls="carrossel-landing" aria-label="Ver pr&oacute;ximos projetos" class="folio-arrow folio-next" type="button">
+        &rsaquo;
+       </button>
+      </div>
+     </div>
+    </section>
+   </section>
+   <!-- 03 — CHAMADA PARA ORÇAMENTO -->
+   <section class="folio-cta">
+    <div class="folio-wrap folio-cta-inner">
+     <div>
+      <span class="folio-eyebrow">
+       VAMOS CRIAR ALGO ESPECIAL?
+      </span>
+      <h2>
+       Seu pr&oacute;ximo projeto pode estar aqui ♡
+      </h2>
+      <p>
+       Sites profissionais, lojas virtuais e experi&ecirc;ncias digitais feitas para o seu neg&oacute;cio.
+      </p>
+     </div>
+     <a href="https://wa.me/5564984188628?text=Ol%C3%A1%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20meu%20projeto." rel="noopener noreferrer" target="_blank">
+      Solicitar or&ccedil;amento &nearrow;
+     </a>
+    </div>
+   </section>
+  </main>
+  <div class="folio-behance">
+   <div>
+    <strong>
+     Mais projetos e apresenta&ccedil;&otilde;es no Behance
+    </strong>
+    <p>
+     Conhe&ccedil;a tamb&eacute;m os detalhes dos meus trabalhos criativos.
+    </p>
+   </div>
+   <a href="https://www.behance.net/soucrislopes" rel="noopener noreferrer" target="_blank">
+    Ver meu Behance &nearrow;
+   </a>
+  </div>
+  <footer class="rodape-final">
+   <div class="rodape-final__base">
+    <span class="rodape-final__base-linha">
+    </span>
+    <span class="rodape-final__base-coracao">
+     ♡
+    </span>
+    <span class="rodape-final__base-linha">
+    </span>
+   </div>
+   <p class="rodape-final__copyright">
+    Feito com ♡ carinho &bull; &copy; 2026
+    <strong>
+     Cris Lopes Art
+    </strong>
+    <span class="rodape-final__direitos">
+     &bull; Todos os direitos reservados.
+    </span>
+   </p>
+  </footer>
+  <div aria-labelledby="folio-modal-title" aria-modal="true" class="folio-modal" hidden="" id="folio-modal" role="dialog">
+   <div class="folio-modal-panel">
+    <div class="folio-modal-bar">
+     <strong id="folio-modal-title">
+      Visualiza&ccedil;&atilde;o do projeto
+     </strong>
+     <div class="folio-modal-actions">
+      <a href="#" id="folio-modal-external" rel="noopener noreferrer" target="_blank">
+       Abrir em outra aba &nearrow;
+      </a>
+      <button aria-label="Fechar visualiza&ccedil;&atilde;o" id="folio-modal-close" type="button">
+       &times;
+      </button>
+     </div>
+    </div>
+    <div class="folio-modal-content">
+     <iframe hidden="" id="folio-modal-frame" loading="lazy" title="Visualiza&ccedil;&atilde;o interativa do site">
+     </iframe>
+     <img alt="Apresenta&ccedil;&atilde;o ampliada do projeto" hidden="" id="folio-modal-image"/>
+    </div>
+    <p class="folio-modal-note">
+     Se o site n&atilde;o carregar aqui, clique em &ldquo;Abrir em outra aba&rdquo;. Alguns sites bloqueiam visualiza&ccedil;&atilde;o incorporada.
+    </p>
+   </div>
+  </div>
+  <div class="folio-whatsapp-wrap" id="folio-whatsapp">
+   <div class="folio-whatsapp-hint" id="folio-whatsapp-hint">
+    <span>
+     Envie-nos uma mensagem por
+     <br/>
+     WhatsApp
+    </span>
+    <button aria-label="Fechar mensagem" class="folio-whatsapp-dismiss" onclick="event.preventDefault();event.stopPropagation();document.getElementById('folio-whatsapp-hint').remove();return false;" type="button">
+     &times;
+    </button>
+   </div>
+   <a aria-label="Falar com Cris Lopes Art no WhatsApp" class="folio-whatsapp" href="https://wa.me/5564984188628?text=Ol%C3%A1%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." rel="noopener noreferrer" target="_blank">
+    <svg fill="none" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+     </path>
+     <path d="M9 9c.5 2.2 2 3.7 4.2 4.5l1.1-.9 1.8 1.1-.5 1.5c-3.6.8-7.9-3.5-7.1-7.1l1.5-.5L11.1 9 10 10z">
+     </path>
+    </svg>
+   </a>
+  </div>
+  <script>
+   if(location.protocol==='file:'){const x=document.getElementById('folio-server-warning');x.hidden=false;}
+  </script>
+  <script src="./portfolio.js?v=20261114-filters1">
+  </script>
+  <script src="./preview.js?v=20261114-organizado">
+  </script>
+ </body>
+</html>

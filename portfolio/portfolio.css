@@ -1,0 +1,120 @@
+/* Portfólio Cris Lopes Art — complementar ao style.css original */
+body.pagina-portfolio{--folio-purple:#5D3C64;--folio-pink:#D391B0;--folio-berry:#7B466A;--folio-ink:#26122e;background:#fff9fc;color:var(--folio-ink);font-family:Poppins,Arial,sans-serif}
+.pagina-portfolio main{display:block}.pagina-portfolio a{text-decoration:none}.folio-wrap{width:min(1190px,calc(100% - 48px));margin-inline:auto}.pagina-portfolio header{z-index:1000}.pagina-portfolio header .logo img{object-fit:contain}
+.pagina-portfolio .menu a.active{color:var(--folio-berry)}.folio-hero{background:radial-gradient(ellipse at 82% 25%,#efd7f1 0,transparent 48%),linear-gradient(108deg,#fff8fc 0%,#f9e7f3 56%,#f2dcfa 100%);overflow:hidden;border-bottom:1px solid #f2e3f1}
+.folio-hero-layout{display:grid;grid-template-columns:1.03fr 1fr;gap:30px;align-items:center;min-height:390px;padding-block:55px}.folio-kicker,.folio-eyebrow{font-size:12px;letter-spacing:.19em;font-weight:800;color:#a26192}.folio-hero h1{font-size:clamp(52px,6.5vw,85px);line-height:1.05;margin:12px 0 19px;color:#54245e;letter-spacing:-.055em}.folio-heart{color:#df88af;font-size:.6em;margin-left:11px}.folio-hero-copy p{font-size:17px;line-height:1.85;max-width:565px;margin-bottom:28px;color:#654b69}.folio-hero-button,.folio-cta a{display:inline-flex;align-items:center;gap:16px;background:linear-gradient(100deg,#7B466A,#9F6496);color:white!important;font-size:14px;font-weight:700;padding:14px 25px;border-radius:35px;box-shadow:0 10px 24px #7b466a22;transition:transform .2s,box-shadow .2s}.folio-hero-button:hover,.folio-cta a:hover{transform:translateY(-3px);box-shadow:0 15px 25px #7b466a35}
+.folio-hero-visual{height:315px;position:relative;display:grid;place-items:center}.folio-circle{position:absolute;border-radius:50%}.folio-circle-one{width:345px;height:345px;background:#f3cce5;opacity:.5;filter:blur(18px)}.folio-circle-two{width:230px;height:230px;border:2px dashed #d9a5ce;transform:rotate(-15deg)}.folio-laptop{width:min(410px,92%);position:relative;transform:rotate(-4deg);filter:drop-shadow(0 15px 17px #6e3a6a3d)}.folio-screen{height:240px;border:11px solid #3b2c42;border-bottom-width:15px;border-radius:15px 15px 5px 5px;background:linear-gradient(120deg,#e7bbe5,#f9e7f6);display:flex;align-items:center;justify-content:center;padding:35px}.folio-screen img{max-width:85%;max-height:125px;object-fit:contain}.folio-laptop-base{height:14px;background:linear-gradient(#ddd0df,#ae99b3);margin:-1px -22px 0;border-radius:0 0 28px 28px}.folio-float{position:absolute;font-size:38px;color:#e5a6c5}.folio-float-a{top:25px;right:50px}.folio-float-b{bottom:3px;left:20px;font-size:52px}.folio-float-c{top:30px;left:12px}
+.folio-projects{padding-block:75px 85px}.folio-section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:25px}.folio-section-heading h2{font-size:clamp(25px,3vw,37px);margin:5px 0;color:#54245e}.folio-section-heading h2 span{color:#d391b0}.folio-section-heading p{color:#896d8c;font-size:13px}.folio-filters{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 34px}.folio-filters button{border:1px solid #bb8eb9;background:white;color:#6b4272;border-radius:24px;padding:10px 17px;font:600 12px Poppins,Arial;cursor:pointer;transition:all .2s}.folio-filters button:hover,.folio-filters button.is-active{color:white;background:#7B466A;border-color:#7B466A}.folio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.folio-card{background:#fff;border:1px solid #efdfea;border-radius:20px;overflow:hidden;box-shadow:0 8px 23px #6b3a6310;transition:transform .25s,box-shadow .25s}.folio-card:hover{transform:translateY(-5px);box-shadow:0 16px 35px #6b3a6324}.folio-card[hidden]{display:none}.folio-card-image{height:235px;position:relative;background:linear-gradient(135deg,#f8ddea,#efe2ff);overflow:hidden}.folio-card-image>img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .4s}.folio-card:hover .folio-card-image>img{transform:scale(1.04)}.folio-type{position:absolute;top:14px;left:14px;z-index:2;background:#ffffffef;border:1px solid #e9bbd8;color:#743d70;padding:7px 13px;border-radius:20px;font:600 11px Poppins,Arial}.folio-card-content{padding:22px}.folio-card h3{margin:0 0 8px;font-size:19px;color:#4f2559}.folio-card p{margin:0;min-height:64px;font-size:13px;line-height:1.7;color:#6c586e}.folio-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:15px}.folio-tags span{font-size:10px;font-weight:600;color:#85467d;background:#f7e9f6;padding:6px 10px;border-radius:15px}.folio-card-content>a{display:flex;align-items:center;justify-content:space-between;margin-top:20px;color:#7b466a!important;font-size:13px;font-weight:800;padding:11px 0;border-top:1px solid #f4e8f1}.folio-card-content>a:hover{color:#ab4e88!important}.folio-card-content>a span{font-size:21px}.folio-empty{text-align:center;color:#785f7f;padding:30px}
+.folio-preview-lili{background:linear-gradient(140deg,#fae1f7,#f1c5df 45%,#e4c3ff);display:grid;place-items:center}.folio-mini-browser{width:80%;height:74%;margin-top:27px;background:#fff;border:7px solid #3f2b46;border-radius:12px;overflow:hidden;box-shadow:0 17px 22px #4d28572c;position:relative}.folio-mini-bar{height:18px;background:#3f2b46;display:flex;gap:4px;align-items:center;padding-left:8px}.folio-mini-bar i{width:5px;height:5px;border-radius:50%;background:#dbaed9}.folio-mini-browser iframe{width:1200px;height:700px;transform:scale(.255);transform-origin:top left;border:0;pointer-events:none;background:#f8dcea}
+.folio-cta{background:linear-gradient(100deg,#f8e3f4,#f1dff9);border-top:1px solid #f0d8ed}.folio-cta-inner{padding-block:46px;display:flex;gap:20px;justify-content:space-between;align-items:center}.folio-cta h2{margin:6px 0 8px;color:#54245e;font-size:clamp(22px,3vw,31px)}.folio-cta p{margin:0;color:#775d79;font-size:13px;line-height:1.7}.pagina-portfolio .rodape-final{margin-top:0}
+@media(max-width:1020px){.folio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.folio-hero-layout{min-height:350px}.folio-hero-visual{height:260px}.folio-screen{height:200px}}
+@media(max-width:768px){.folio-wrap{width:min(100% - 34px,560px)}.folio-hero-layout{grid-template-columns:1fr;gap:0;padding:38px 0 26px}.folio-hero h1{font-size:55px}.folio-hero-copy p{font-size:14px;line-height:1.8}.folio-hero-visual{height:235px;margin-top:24px}.folio-laptop{width:310px}.folio-screen{height:180px;padding:22px}.folio-screen img{max-height:100px}.folio-circle-one{height:240px;width:240px}.folio-circle-two{width:180px;height:180px}.folio-section-heading{display:block}.folio-section-heading p{margin:3px 0}.folio-projects{padding-block:48px}.folio-grid{grid-template-columns:1fr;gap:18px}.folio-card-image{height:230px}.folio-card p{min-height:0}.folio-filters{gap:8px}.folio-filters button{font-size:11px;padding:9px 12px}.folio-cta-inner{display:block}.folio-cta a{margin-top:23px}}
+@media(min-width:769px) and (max-width:1200px){.pagina-portfolio .header-content{gap:8px}.pagina-portfolio nav .menu{gap:7px}.pagina-portfolio nav .menu a{font-size:11px}}
+
+
+/* CARROSSEIS POR CATEGORIA: 3 cards desktop, 2 tablet, 1 celular */
+.folio-category{margin-top:44px}
+.folio-category + .folio-category{border-top:1px solid #f1dfea;padding-top:42px}
+.folio-category-number{color:#a26192;font-size:11px;font-weight:800;letter-spacing:.13em}
+.folio-category-header{margin-bottom:20px}
+.folio-category-header h2{color:#54245e;font-size:clamp(22px,2.8vw,32px);line-height:1.25;margin:7px 0}
+.folio-category-header p{font-size:13px;color:#806b82;line-height:1.65;margin:0}
+.folio-carousel{min-width:0}
+.folio-carousel-track{--folio-visible:3;--folio-gap:22px;display:flex;gap:var(--folio-gap);overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain;padding:8px 2px 14px}
+.folio-carousel-track::-webkit-scrollbar{display:none}
+.folio-carousel-track>.folio-card{scroll-snap-align:start;scroll-snap-stop:always;flex:0 0 calc((100% - (var(--folio-visible) - 1)*var(--folio-gap))/var(--folio-visible));min-width:0}
+.folio-carousel-track>.folio-card p{min-height:64px}
+.folio-carousel-controls{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:9px}
+.folio-arrow{width:39px;height:39px;flex:none;border:1px solid #d9a6d0;background:#fff;color:#7b466a;border-radius:50%;font-size:28px;line-height:1;cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s}
+.folio-arrow:not(:disabled):hover{background:#7b466a;color:#fff}
+.folio-arrow:disabled{opacity:.35;cursor:default}
+.folio-pages{display:flex;align-items:center;justify-content:center;gap:7px}
+.folio-page{font:700 11px Poppins,Arial,sans-serif;min-width:30px;height:30px;padding:0 8px;border:1px solid #e7c5de;border-radius:20px;background:#fff;color:#865481;cursor:pointer}
+.folio-page.is-active{background:#7b466a;color:#fff;border-color:#7b466a}
+.folio-count{font:600 11px Poppins,Arial,sans-serif;color:#806b82;white-space:nowrap}
+.folio-carousel.is-static .folio-carousel-controls{display:none}
+.folio-category .folio-card-content{display:flex;flex-direction:column;min-height:220px}
+.folio-category .folio-card-content>a{margin-top:auto}
+@media(max-width:1020px){.folio-carousel-track{--folio-visible:2}}
+@media(max-width:768px){.folio-carousel-track{--folio-visible:1;--folio-gap:14px}.folio-category{margin-top:32px}.folio-category+.folio-category{padding-top:31px}.folio-category .folio-card-content{min-height:0}.folio-carousel-track>.folio-card p{min-height:0}.folio-carousel-controls{margin-top:6px}.folio-category-header h2{font-size:24px}.folio-carousel-track{padding-bottom:9px}}
+@media(prefers-reduced-motion:reduce){.folio-carousel-track{scroll-behavior:auto}}
+
+.folio-image-link{display:block;width:100%;height:100%;overflow:hidden}.folio-image-link img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .25s}.folio-image-link:hover img{transform:scale(1.035)}
+
+/* AJUSTES 2026-11-14: compensação do menu fixo, numeração simples, preview e contato */
+.pagina-portfolio{--folio-header-height:82px}
+.pagina-portfolio main{padding-top:var(--folio-header-height)}
+.pagina-portfolio #projetos{scroll-margin-top:calc(var(--folio-header-height) + 14px)}
+.folio-carousel-controls .folio-count{display:none!important}
+.folio-pages{gap:10px}
+.folio-page{border-radius:50%;width:34px;height:34px;min-width:34px;padding:0;display:grid;place-items:center}
+.folio-card-content>a,.folio-image-link{cursor:pointer}
+.folio-behance{max-width:1190px;margin:30px auto 55px;padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;border:1px solid #ecd4e9;border-radius:20px;background:#fff}
+.folio-behance strong{color:#54245e;font-size:17px}
+.folio-behance p{font-size:13px;color:#785e7f;margin:5px 0 0}
+.folio-behance>a{flex-shrink:0;display:inline-flex;border:1px solid #7b466a;color:#7b466a;padding:12px 18px;border-radius:40px;font-size:13px;font-weight:700}
+.folio-behance>a:hover{background:#7b466a;color:#fff}
+.folio-modal[hidden]{display:none!important}
+.folio-modal{position:fixed;inset:0;z-index:20000;background:#160a22dd;padding:clamp(10px,3vw,30px);display:flex;align-items:center;justify-content:center}
+.folio-modal-panel{width:min(1260px,100%);height:min(92vh,850px);background:white;border-radius:18px;display:flex;flex-direction:column;box-shadow:0 25px 80px #0006;overflow:hidden}
+.folio-modal-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;background:#fff7fc;border-bottom:1px solid #e9d9e8;color:#54245e}
+.folio-modal-bar strong{font-size:14px}
+.folio-modal-actions{display:flex;align-items:center;gap:12px}
+.folio-modal-actions a{font-size:12px;color:#7b466a;font-weight:700}
+#folio-modal-close{background:#7b466a;color:white;font-size:25px;border:0;border-radius:50%;height:35px;width:35px;cursor:pointer}
+.folio-modal-content{min-height:0;flex:1;display:grid;place-items:center;background:#faf6fb}
+.folio-modal-content iframe{width:100%;height:100%;border:0;background:white}
+.folio-modal-content img{width:100%;height:100%;object-fit:contain}
+.folio-modal-content [hidden]{display:none!important}
+.folio-modal-note{font-size:11px;margin:0;padding:8px 15px;color:#806780;text-align:center}
+body.folio-modal-open{overflow:hidden!important}
+.folio-whatsapp-wrap{position:fixed;right:25px;bottom:24px;z-index:5000;display:flex;align-items:center;gap:12px}
+.folio-whatsapp{width:62px;height:62px;display:grid;place-items:center;border-radius:50%;color:#fff!important;background:#20c763;box-shadow:0 5px 20px #176a3540}
+.folio-whatsapp:hover{background:#12b351;transform:scale(1.04)}
+.folio-whatsapp-hint{min-width:250px;background:white;border-radius:11px;box-shadow:0 7px 26px #0002;display:flex;justify-content:space-between;align-items:flex-start;padding:15px 14px 15px 18px;gap:12px;font-size:13px;line-height:1.6;color:#211a26}
+.folio-whatsapp-dismiss{background:none;border:0;font-size:21px;line-height:1;cursor:pointer;color:#34303a}
+.folio-whatsapp-hint[hidden]{display:none!important}
+@media(max-width:768px){.folio-behance{margin:16px 17px 30px;padding:22px;display:block}.folio-behance>a{margin-top:14px}.folio-modal-bar{padding:9px 10px}.folio-modal-bar strong{font-size:12px}.folio-modal-actions a{font-size:11px}.folio-whatsapp-wrap{right:14px;bottom:14px}.folio-whatsapp{width:54px;height:54px}.folio-whatsapp-hint{min-width:0;width:210px;font-size:12px}}
+@media(max-width:430px){.folio-whatsapp-hint{width:185px}}
+
+/* Garantir que o X esconda a mensagem mesmo com display:flex */
+#folio-whatsapp-hint[hidden]{display:none!important}
+
+/* Imagens de projetos ocupam o card sem estourar texto alternativo */
+.folio-card-image .folio-image-link{display:block;width:100%;height:100%;overflow:hidden}
+.folio-card-image .folio-image-link img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .35s ease;color:transparent;font-size:0}
+.folio-card:hover .folio-image-link img{transform:scale(1.035)}
+.folio-preview-lili .folio-image-link{height:100%;width:100%}
+.folio-preview-lili .folio-image-link img{object-position:58% center}
+
+#folio-server-warning{background:#ffe7f4;color:#5d3c64;padding:14px 24px;font:600 13px Poppins,sans-serif;text-align:center}#folio-server-warning[hidden]{display:none!important}
+
+/* Lili & Glacê: mockup de monitor, igual à apresentação dos outros projetos */
+.folio-preview-lili{background:linear-gradient(135deg,#f7d8e7,#f5e9e3 45%,#d8b9e2)}
+.folio-preview-lili .folio-image-link{display:block;height:100%}
+.folio-lili-desk{height:100%;width:100%;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 18% 18%,#fff9 0,transparent 43%),linear-gradient(160deg,#f6d5e4,#f3e7e6 70%,#e3c7d9)}
+.folio-lili-computer{width:77%;height:83%;position:relative;display:flex;align-items:center;flex-direction:column;justify-content:flex-start;padding-top:5%}
+.folio-lili-bezel{width:100%;aspect-ratio:16/10;border:9px solid #32263a;border-bottom-width:13px;border-radius:13px 13px 9px 9px;background:#32263a;overflow:hidden;box-shadow:0 9px 20px #673f7040;z-index:1}
+.folio-lili-screen{width:100%;height:100%;overflow:hidden;background:#ffd5e2}
+.folio-preview-lili .folio-lili-screen img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transform:none!important}
+.folio-lili-stem{width:13%;height:11%;background:linear-gradient(90deg,#9d8b9d,#e7dce8,#a897a6);margin-top:-1px}
+.folio-lili-base{height:7px;width:37%;border-radius:60% 60% 7px 7px;background:linear-gradient(90deg,#a49aa6,#ece5ee,#a49aa6);box-shadow:0 4px 5px #6a426a35}
+.folio-lili-accessories{position:absolute;width:100%;bottom:6%;left:0;display:flex;justify-content:space-between;padding:0 5%;font-size:28px;color:#d186a9;pointer-events:none}
+@media(max-width:600px){.folio-lili-bezel{border-width:6px;border-bottom-width:10px}}
+
+.folio-card-image img[src*="lili-glace-mockup"]{object-fit:cover!important;object-position:center!important}
+
+/* Apresentações verticais: mostrar imagem completa com rolagem dentro do modal */
+.folio-modal-content{overflow-y:auto;overflow-x:hidden;display:block;overscroll-behavior:contain;}
+.folio-modal-content img:not([hidden]){width:100%;height:auto;max-height:none;object-fit:initial;display:block;}
+.folio-modal-content iframe:not([hidden]){display:block;width:100%;height:100%;min-height:100%;}
+
+/* Ajuste: o cabeçalho já ocupa espaço no fluxo do documento */
+body.pagina-portfolio main{padding-top:0!important}
+body.pagina-portfolio .folio-hero{margin-top:0!important}
+body.pagina-portfolio .folio-category[hidden]{display:none!important}
+.folio-category-filters{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0 32px}
+.folio-category-filters button{font:600 12px Poppins,Arial,sans-serif;cursor:pointer;padding:11px 18px;border-radius:100px;border:1px solid #c99ac1;background:#fff;color:#68366c;transition:background .2s,color .2s}
+.folio-category-filters button:hover,.folio-category-filters button.is-active{background:#7b466a;color:#fff;border-color:#7b466a}
+.folio-category-filters button:focus-visible{outline:3px solid #d391b0;outline-offset:2px}
+@media(max-width:768px){.folio-category-filters{flex-wrap:nowrap;overflow-x:auto;padding:2px 0 12px;scrollbar-width:thin}.folio-category-filters button{white-space:nowrap;flex:none;font-size:11px;padding:10px 14px}}
