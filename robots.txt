@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://soucris.github.io/cris-lopes-art/sitemap.xml
+Sitemap: https://crislopesart.com.br/sitemap.xml
