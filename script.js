@@ -228,3 +228,57 @@ if (menuToggle && menuPrincipal) {
         if (event.key === "Escape") fecharMenu();
     });
 }
+
+
+/* CARROSSEL DE DEPOIMENTOS */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const lista = document.getElementById("depoimentosLista");
+    const anterior = document.getElementById("depoimentoAnterior");
+    const proximo = document.getElementById("depoimentoProximo");
+    const indicadores = document.getElementById("depoimentoIndicadores");
+
+    if (!lista || !anterior || !proximo || !indicadores) return;
+
+    const cards = Array.from(lista.children);
+    let indice = 0;
+
+    function totalPosicoes() {
+        const largura = cards[0].getBoundingClientRect().width;
+        const visiveis = Math.max(1, Math.round(lista.clientWidth / largura));
+        return Math.max(1, cards.length - visiveis + 1);
+    }
+
+    function atualizar() {
+        const total = totalPosicoes();
+        indice = Math.min(indice, total - 1);
+
+        indicadores.innerHTML = "";
+
+        for (let i = 0; i < total; i++) {
+            const ponto = document.createElement("button");
+            ponto.type = "button";
+            ponto.classList.toggle("ativo", i === indice);
+            ponto.setAttribute("aria-label", `Ir para depoimento ${i + 1}`);
+            ponto.addEventListener("click", () => navegar(i));
+            indicadores.appendChild(ponto);
+        }
+    }
+
+    function navegar(novoIndice) {
+        indice = Math.max(0, Math.min(novoIndice, totalPosicoes() - 1));
+
+        lista.scrollTo({
+            left: cards[indice].offsetLeft - cards[0].offsetLeft,
+            behavior: "smooth"
+        });
+
+        atualizar();
+    }
+
+    anterior.addEventListener("click", () => navegar(indice - 1));
+    proximo.addEventListener("click", () => navegar(indice + 1));
+
+    window.addEventListener("resize", atualizar);
+    atualizar();
+});
